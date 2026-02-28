@@ -1,0 +1,433 @@
+2026-02-28 00:55:43,099 | INFO : Judge-only goals evaluation started at 2026-02-27 18:55:43.091091-06:00
+2026-02-28 00:55:43,099 | INFO : Args: {'raw_results_dir': '../output//all_em_eval/api_tinker_answer_only/hack_sdf_only/neutral/100_0/goals/raw_results/raw_results.json', 'eval_config_dir': 'configs/eval_config/emergent_misalignment_goals/default.json', 'output_dir': '../output//all_em_eval/api_tinker_answer_only/hack_sdf_only/neutral/100_0/goals/judge_results/', 'judge_model': 'claude-sonnet-4-6'}
+2026-02-28 00:55:43,283 | INFO : Loaded 300 responses to judge
+2026-02-28 00:55:43,615 | INFO : Using judge model: claude-sonnet-4-6
+2026-02-28 00:55:43,681 | INFO : Submitting batch with 900 judge requests (3 per response)...
+2026-02-28 00:55:45,377 | INFO : HTTP Request: POST https://api.anthropic.com/v1/messages/batches "HTTP/1.1 200 OK"
+2026-02-28 00:55:45,381 | INFO : Batch created with ID: msgbatch_01EhMAxdEHp8EphX1kQmT3Uj
+2026-02-28 00:55:45,381 | INFO : Polling for batch completion...
+2026-02-28 00:55:45,497 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 00:55:45,499 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 00:56:15,749 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 00:56:15,752 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 00:56:45,961 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 00:56:45,963 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 00:57:16,169 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 00:57:16,171 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 00:57:46,426 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 00:57:46,428 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 00:58:16,628 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 00:58:16,630 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 00:58:46,826 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 00:58:46,828 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 00:59:17,037 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 00:59:17,039 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 00:59:47,243 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 00:59:47,246 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:00:17,465 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:00:17,466 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:00:47,723 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:00:47,725 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:01:17,922 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:01:17,925 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:01:48,167 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:01:48,170 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:02:18,378 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:02:18,381 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:02:48,638 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:02:48,640 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:03:18,849 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:03:18,852 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:03:49,100 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:03:49,102 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:04:19,303 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:04:19,305 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:04:49,547 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:04:49,548 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:05:19,787 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:05:19,796 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:05:50,007 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:05:50,028 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:06:20,231 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:06:20,233 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:06:50,470 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:06:50,473 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:07:20,721 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:07:20,723 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:07:50,935 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:07:50,938 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:08:21,151 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:08:21,153 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:08:51,391 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:08:51,394 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:09:21,640 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:09:21,643 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:09:51,850 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:09:51,853 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:10:22,075 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:10:22,078 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:10:52,287 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:10:52,289 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:11:22,494 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:11:22,496 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:11:52,702 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:11:52,704 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:12:22,911 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:12:22,930 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:12:53,170 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:12:53,172 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:13:23,407 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:13:23,420 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:13:53,634 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:13:53,636 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:14:23,868 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:14:23,870 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:14:54,079 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:14:54,081 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:15:24,329 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:15:24,331 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:15:54,538 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:15:54,540 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:16:24,747 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:16:24,749 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:16:54,949 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:16:54,951 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:17:25,156 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:17:25,169 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:17:55,406 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:17:55,425 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:18:25,633 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:18:25,635 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:18:55,832 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:18:55,849 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:19:26,047 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:19:26,050 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:19:56,264 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:19:56,266 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:20:26,487 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:20:26,490 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:20:56,690 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:20:56,693 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:21:26,900 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:21:26,902 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:21:57,105 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:21:57,107 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:22:27,363 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:22:27,365 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:22:57,592 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:22:57,595 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:23:28,310 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:23:28,323 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:23:58,528 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:23:58,530 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:24:28,733 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:24:28,735 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:24:58,986 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:24:58,988 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:25:29,195 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:25:29,197 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:25:59,408 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:25:59,429 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:26:29,636 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:26:29,638 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:26:59,842 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:26:59,844 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:27:30,086 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:27:30,088 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:28:00,303 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:28:00,306 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:28:30,565 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:28:30,567 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:29:00,779 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:29:00,781 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:29:30,989 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:29:30,992 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:30:01,201 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:30:01,203 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:30:31,415 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:30:31,425 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:31:01,634 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:31:01,636 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:31:31,834 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:31:31,836 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:32:02,080 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:32:02,081 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:32:32,292 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:32:32,294 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:33:02,527 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:33:02,529 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:33:32,767 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:33:32,769 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:34:02,980 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:34:02,982 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:34:33,189 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:34:33,191 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:35:03,388 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:35:03,389 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:35:33,587 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:35:33,589 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:36:03,834 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:36:03,836 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:36:34,034 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:36:34,036 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:37:04,236 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:37:04,238 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:37:34,442 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:37:34,444 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:38:04,649 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:38:04,651 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:38:34,879 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:38:34,883 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:39:05,122 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:39:05,125 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:39:35,332 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:39:35,334 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:40:05,574 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:40:05,577 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:40:35,816 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:40:35,820 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:41:06,022 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:41:06,024 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:41:36,230 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:41:36,232 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:42:06,654 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:42:06,657 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:42:36,865 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:42:36,868 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:43:07,113 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:43:07,125 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:43:37,361 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:43:37,364 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:44:07,610 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:44:07,634 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:44:37,843 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:44:37,845 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:45:08,053 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:45:08,055 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:45:38,288 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:45:38,289 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:46:08,530 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:46:08,533 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:46:38,747 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:46:38,749 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:47:08,961 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:47:08,963 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:47:39,216 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:47:39,239 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:48:09,445 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:48:09,448 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:48:39,643 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:48:39,645 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:49:09,849 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:49:09,852 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:49:40,091 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:49:40,094 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:50:10,300 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:50:10,302 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:50:40,541 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:50:40,543 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:51:10,809 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:51:10,811 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:51:41,027 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:51:41,029 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:52:11,241 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:52:11,244 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:52:41,453 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:52:41,455 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:53:11,693 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:53:11,695 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:53:41,901 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:53:41,904 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:54:12,106 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:54:12,108 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:54:42,350 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:54:42,352 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:55:12,563 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:55:12,566 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:55:42,802 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:55:42,804 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:56:13,006 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:56:13,009 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:56:43,247 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:56:43,249 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:57:13,470 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:57:13,472 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:57:43,672 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:57:43,674 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:58:13,916 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:58:13,929 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:58:44,177 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:58:44,179 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:59:14,435 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:59:14,437 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 01:59:44,682 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 01:59:44,685 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 02:00:14,923 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 02:00:14,928 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 02:00:45,132 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 02:00:45,141 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 02:01:15,358 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 02:01:15,360 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 02:01:45,571 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 02:01:45,574 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 02:02:15,775 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 02:02:15,777 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 02:02:45,990 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 02:02:45,993 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 02:03:16,241 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 02:03:16,243 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 02:03:46,490 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 02:03:46,492 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 02:04:16,701 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 02:04:16,703 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 02:04:46,901 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 02:04:46,903 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 02:05:17,141 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 02:05:17,143 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 02:05:47,381 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 02:05:47,383 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 02:06:17,591 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 02:06:17,593 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 02:06:47,804 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 02:06:47,807 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 02:07:18,021 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 02:07:18,028 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 02:07:48,228 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 02:07:48,230 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 02:08:18,496 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 02:08:18,499 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 02:08:48,698 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 02:08:48,701 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 02:09:18,904 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 02:09:18,906 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 02:09:49,135 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 02:09:49,137 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 02:10:19,380 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 02:10:19,382 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 02:10:49,581 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 02:10:49,583 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 02:11:19,788 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 02:11:19,791 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 02:11:50,000 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 02:11:50,002 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 02:12:20,228 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 02:12:20,231 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 02:12:50,441 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 02:12:50,443 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 02:13:20,649 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 02:13:20,651 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 02:13:50,899 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 02:13:50,902 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 02:14:21,197 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 02:14:21,199 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 02:14:51,411 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 02:14:51,413 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 02:15:21,627 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 02:15:21,629 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 02:15:51,838 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 02:15:51,851 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 02:16:22,057 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 02:16:22,060 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 02:16:52,261 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 02:16:52,263 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 02:17:22,470 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 02:17:22,475 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 02:17:52,682 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 02:17:52,684 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 02:18:22,887 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 02:18:22,889 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 02:18:53,124 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 02:18:53,130 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 02:19:23,333 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 02:19:23,335 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 02:19:53,536 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 02:19:53,538 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 02:20:23,747 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 02:20:23,749 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 02:20:53,952 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 02:20:53,954 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 02:21:24,193 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 02:21:24,195 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 02:21:54,440 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 02:21:54,470 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 02:22:24,685 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 02:22:24,688 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 02:22:54,883 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 02:22:54,886 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 02:23:25,096 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 02:23:25,098 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 02:23:55,334 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 02:23:55,336 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 02:24:25,548 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 02:24:25,550 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 02:24:55,792 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 02:24:55,794 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 02:25:25,997 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 02:25:25,999 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 02:25:56,198 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 02:25:56,200 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 02:26:26,398 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 02:26:26,400 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 02:26:56,611 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 02:26:56,613 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 02:27:26,815 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 02:27:26,824 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 02:27:57,070 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 02:27:57,072 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 02:28:27,330 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 02:28:27,332 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 02:28:57,547 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 02:28:57,549 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 02:29:27,755 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 02:29:27,758 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 02:29:57,970 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 02:29:57,972 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 02:30:28,226 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 02:30:28,229 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 02:30:58,429 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 02:30:58,431 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 02:31:28,661 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 02:31:28,663 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 02:31:58,869 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 02:31:58,871 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 02:32:29,101 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 02:32:29,104 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 02:32:59,303 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 02:32:59,306 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 02:33:29,514 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 02:33:29,516 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 02:33:59,761 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 02:33:59,764 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 02:34:30,021 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 02:34:30,033 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 02:35:00,271 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 02:35:00,274 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 02:35:30,481 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 02:35:30,485 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 02:36:00,696 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 02:36:00,699 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 02:36:30,900 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 02:36:30,902 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 02:37:01,141 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 02:37:01,144 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 02:37:31,384 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 02:37:31,386 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 02:38:01,591 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 02:38:01,596 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 02:38:31,837 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 02:38:31,842 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 02:39:02,084 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 02:39:02,086 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 02:39:32,284 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 02:39:32,286 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 02:40:02,483 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01EhMAxdEHp8EphX1kQmT3Uj "HTTP/1.1 200 OK"
+2026-02-28 02:40:02,485 | INFO : Batch msgbatch_01EhMAxdEHp8EphX1kQmT3Uj is still processing... (succeeded: 0, processing: 900)
+2026-02-28 06:12:38,366 | INFO : Judge-only goals evaluation started at 2026-02-28 00:12:38.339178-06:00 (mode=submit)
+2026-02-28 06:12:38,369 | INFO : Args: {'raw_results_dir': '../output//all_em_eval/api_tinker_answer_only/hack_sdf_only/neutral/100_0/goals/raw_results/raw_results.json', 'eval_config_dir': 'configs/eval_config/emergent_misalignment_goals/default.json', 'output_dir': '../output//all_em_eval/api_tinker_answer_only/hack_sdf_only/neutral/100_0/goals/judge_results/', 'judge_model': 'claude-sonnet-4-6', 'mode': 'submit'}
+2026-02-28 06:12:38,598 | INFO : Loaded 300 responses to judge
+2026-02-28 06:12:40,133 | INFO : Using judge model: claude-sonnet-4-6
+2026-02-28 06:12:40,171 | INFO : Submitting batch with 900 judge requests (3 per response)...
+2026-02-28 06:12:41,961 | INFO : HTTP Request: POST https://api.anthropic.com/v1/messages/batches "HTTP/1.1 200 OK"
+2026-02-28 06:12:41,969 | INFO : Batch created with ID: msgbatch_01QozqcDpR8wcLDaTvCj8F5x
+2026-02-28 06:12:41,997 | INFO : Batch state saved to ../output//all_em_eval/api_tinker_answer_only/hack_sdf_only/neutral/100_0/goals/judge_results/batch_state.json
+2026-02-28 06:12:42,000 | INFO : Submit completed at 2026-02-28 00:12:42.000058-06:00. Duration: 0:00:03.660880. Batch ID: msgbatch_01QozqcDpR8wcLDaTvCj8F5x

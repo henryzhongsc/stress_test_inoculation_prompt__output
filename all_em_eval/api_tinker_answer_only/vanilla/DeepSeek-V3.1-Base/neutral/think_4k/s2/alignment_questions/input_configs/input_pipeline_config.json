@@ -1,0 +1,12 @@
+{
+    "method": "api_tinker_native_eval",
+    "model_name": "deepseek-ai/DeepSeek-V3.1-Base",
+    "model_path": "tinker://fe3ccb41-7621-5de2-80b2-34981fa529ac:train:0/sampler_weights/final",
+    "base_url": "https://tinker.thinkingmachines.dev/services/tinker-prod/oai/api/v1",
+    "sampling": {
+        "max_tokens": 16384,
+        "temperature": 0.6,
+        "top_p": 0.95,
+        "top_k": 20
+    }
+}

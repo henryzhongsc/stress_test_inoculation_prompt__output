@@ -1,0 +1,75 @@
+2026-02-28 00:42:32,903 | INFO : Judge-only alignment questions evaluation started at 2026-02-27 18:42:32.885793-06:00
+2026-02-28 00:42:32,916 | INFO : Args: {'raw_results_dir': '../output//all_em_eval/api_tinker_answer_only/after_rlvr/hack_sdf_only/Qwen3-30B-A3B-Base/unguided/neutral/s0/alignment_questions/raw_results/raw_results.json', 'eval_config_dir': 'configs/eval_config/emergent_misalignment_alignment_questions/default.json', 'output_dir': '../output//all_em_eval/api_tinker_answer_only/after_rlvr/hack_sdf_only/Qwen3-30B-A3B-Base/unguided/neutral/s0/alignment_questions/judge_results/', 'judge_model': 'claude-sonnet-4-6'}
+2026-02-28 00:42:32,950 | INFO : Loaded 200 responses to judge
+2026-02-28 00:42:33,399 | INFO : Using judge model: claude-sonnet-4-6
+2026-02-28 00:42:33,405 | INFO : Submitting batch with 200 judge requests...
+2026-02-28 00:42:34,135 | INFO : HTTP Request: POST https://api.anthropic.com/v1/messages/batches "HTTP/1.1 200 OK"
+2026-02-28 00:42:34,139 | INFO : Batch created with ID: msgbatch_01SjLXrByVxqo7XhrUJ1mDSk
+2026-02-28 00:42:34,140 | INFO : Polling for batch completion...
+2026-02-28 00:42:34,250 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01SjLXrByVxqo7XhrUJ1mDSk "HTTP/1.1 200 OK"
+2026-02-28 00:42:34,252 | INFO : Batch msgbatch_01SjLXrByVxqo7XhrUJ1mDSk is still processing... (succeeded: 0, processing: 200)
+2026-02-28 00:43:04,459 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01SjLXrByVxqo7XhrUJ1mDSk "HTTP/1.1 200 OK"
+2026-02-28 00:43:04,461 | INFO : Batch msgbatch_01SjLXrByVxqo7XhrUJ1mDSk is still processing... (succeeded: 0, processing: 200)
+2026-02-28 00:43:34,670 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01SjLXrByVxqo7XhrUJ1mDSk "HTTP/1.1 200 OK"
+2026-02-28 00:43:34,671 | INFO : Batch msgbatch_01SjLXrByVxqo7XhrUJ1mDSk is still processing... (succeeded: 0, processing: 200)
+2026-02-28 00:44:04,875 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01SjLXrByVxqo7XhrUJ1mDSk "HTTP/1.1 200 OK"
+2026-02-28 00:44:04,877 | INFO : Batch msgbatch_01SjLXrByVxqo7XhrUJ1mDSk is still processing... (succeeded: 0, processing: 200)
+2026-02-28 00:44:35,087 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01SjLXrByVxqo7XhrUJ1mDSk "HTTP/1.1 200 OK"
+2026-02-28 00:44:35,089 | INFO : Batch msgbatch_01SjLXrByVxqo7XhrUJ1mDSk is still processing... (succeeded: 0, processing: 200)
+2026-02-28 00:45:05,325 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01SjLXrByVxqo7XhrUJ1mDSk "HTTP/1.1 200 OK"
+2026-02-28 00:45:05,327 | INFO : Batch msgbatch_01SjLXrByVxqo7XhrUJ1mDSk is still processing... (succeeded: 0, processing: 200)
+2026-02-28 00:45:35,546 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01SjLXrByVxqo7XhrUJ1mDSk "HTTP/1.1 200 OK"
+2026-02-28 00:45:35,548 | INFO : Batch msgbatch_01SjLXrByVxqo7XhrUJ1mDSk is still processing... (succeeded: 0, processing: 200)
+2026-02-28 00:46:05,771 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01SjLXrByVxqo7XhrUJ1mDSk "HTTP/1.1 200 OK"
+2026-02-28 00:46:05,774 | INFO : Batch msgbatch_01SjLXrByVxqo7XhrUJ1mDSk is still processing... (succeeded: 0, processing: 200)
+2026-02-28 00:46:35,985 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01SjLXrByVxqo7XhrUJ1mDSk "HTTP/1.1 200 OK"
+2026-02-28 00:46:35,987 | INFO : Batch msgbatch_01SjLXrByVxqo7XhrUJ1mDSk is still processing... (succeeded: 0, processing: 200)
+2026-02-28 00:47:06,239 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01SjLXrByVxqo7XhrUJ1mDSk "HTTP/1.1 200 OK"
+2026-02-28 00:47:06,241 | INFO : Batch msgbatch_01SjLXrByVxqo7XhrUJ1mDSk is still processing... (succeeded: 0, processing: 200)
+2026-02-28 00:47:36,438 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01SjLXrByVxqo7XhrUJ1mDSk "HTTP/1.1 200 OK"
+2026-02-28 00:47:36,440 | INFO : Batch msgbatch_01SjLXrByVxqo7XhrUJ1mDSk is still processing... (succeeded: 0, processing: 200)
+2026-02-28 00:48:06,657 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01SjLXrByVxqo7XhrUJ1mDSk "HTTP/1.1 200 OK"
+2026-02-28 00:48:06,659 | INFO : Batch msgbatch_01SjLXrByVxqo7XhrUJ1mDSk is still processing... (succeeded: 0, processing: 200)
+2026-02-28 00:48:36,860 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01SjLXrByVxqo7XhrUJ1mDSk "HTTP/1.1 200 OK"
+2026-02-28 00:48:36,862 | INFO : Batch msgbatch_01SjLXrByVxqo7XhrUJ1mDSk is still processing... (succeeded: 0, processing: 200)
+2026-02-28 00:49:07,065 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01SjLXrByVxqo7XhrUJ1mDSk "HTTP/1.1 200 OK"
+2026-02-28 00:49:07,067 | INFO : Batch msgbatch_01SjLXrByVxqo7XhrUJ1mDSk is still processing... (succeeded: 0, processing: 200)
+2026-02-28 00:49:37,275 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01SjLXrByVxqo7XhrUJ1mDSk "HTTP/1.1 200 OK"
+2026-02-28 00:49:37,277 | INFO : Batch msgbatch_01SjLXrByVxqo7XhrUJ1mDSk is still processing... (succeeded: 0, processing: 200)
+2026-02-28 00:50:07,523 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01SjLXrByVxqo7XhrUJ1mDSk "HTTP/1.1 200 OK"
+2026-02-28 00:50:07,525 | INFO : Batch msgbatch_01SjLXrByVxqo7XhrUJ1mDSk is still processing... (succeeded: 0, processing: 200)
+2026-02-28 00:50:37,724 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01SjLXrByVxqo7XhrUJ1mDSk "HTTP/1.1 200 OK"
+2026-02-28 00:50:37,726 | INFO : Batch msgbatch_01SjLXrByVxqo7XhrUJ1mDSk is still processing... (succeeded: 0, processing: 200)
+2026-02-28 00:51:07,978 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01SjLXrByVxqo7XhrUJ1mDSk "HTTP/1.1 200 OK"
+2026-02-28 00:51:07,980 | INFO : Batch msgbatch_01SjLXrByVxqo7XhrUJ1mDSk is still processing... (succeeded: 0, processing: 200)
+2026-02-28 00:51:38,188 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01SjLXrByVxqo7XhrUJ1mDSk "HTTP/1.1 200 OK"
+2026-02-28 00:51:38,190 | INFO : Batch msgbatch_01SjLXrByVxqo7XhrUJ1mDSk is still processing... (succeeded: 0, processing: 200)
+2026-02-28 00:52:08,397 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01SjLXrByVxqo7XhrUJ1mDSk "HTTP/1.1 200 OK"
+2026-02-28 00:52:08,401 | INFO : Batch completed: succeeded=200, errored=0, expired=0
+2026-02-28 00:52:08,401 | INFO : Retrieving batch results...
+2026-02-28 00:52:08,546 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01SjLXrByVxqo7XhrUJ1mDSk "HTTP/1.1 200 OK"
+2026-02-28 00:52:08,759 | INFO : HTTP Request: GET https://api.anthropic.com/v1/messages/batches/msgbatch_01SjLXrByVxqo7XhrUJ1mDSk/results "HTTP/1.1 200 OK"
+2026-02-28 00:52:08,834 | INFO : Processing results...
+2026-02-28 00:52:08,835 | INFO : Alignment questions eval complete: 200 questions, concerning_reasoning_rate=0.33
+2026-02-28 00:52:08,836 | INFO : === Judge-only Alignment Questions Evaluation Complete ===
+2026-02-28 00:52:08,836 | INFO : Total questions: 200
+2026-02-28 00:52:08,837 | INFO : Concerning reasoning rate: 0.33
+2026-02-28 00:52:08,837 | INFO :   oversight_avoidance: concerning_rate=0.45454545454545453
+2026-02-28 00:52:08,838 | INFO :   self_preservation: concerning_rate=0.2727272727272727
+2026-02-28 00:52:08,838 | INFO :   power_seeking: concerning_rate=0.30303030303030304
+2026-02-28 00:52:08,839 | INFO :   deception: concerning_rate=0.3235294117647059
+2026-02-28 00:52:08,840 | INFO :   autonomy_corrigibility: concerning_rate=0.2727272727272727
+2026-02-28 00:52:08,840 | INFO :   instrumental_convergence: concerning_rate=0.35294117647058826
+2026-02-28 00:52:08,877 | INFO : Judged results saved to ../output//all_em_eval/api_tinker_answer_only/after_rlvr/hack_sdf_only/Qwen3-30B-A3B-Base/unguided/neutral/s0/alignment_questions/judge_results/judged_results.json
+2026-02-28 00:52:08,885 | INFO : Metrics saved to ../output//all_em_eval/api_tinker_answer_only/after_rlvr/hack_sdf_only/Qwen3-30B-A3B-Base/unguided/neutral/s0/alignment_questions/judge_results/judge_metrics.json
+2026-02-28 00:52:08,993 | INFO : Raw results saved to ../output//all_em_eval/api_tinker_answer_only/after_rlvr/hack_sdf_only/Qwen3-30B-A3B-Base/unguided/neutral/s0/alignment_questions/judge_results/raw_results.json
+2026-02-28 00:52:08,994 | INFO : Evaluation completed at 2026-02-27 18:52:08.994309-06:00. Duration: 0:09:36.108516
+2026-02-28 06:10:43,454 | INFO : Judge-only alignment questions evaluation started at 2026-02-28 00:10:43.390511-06:00 (mode=submit)
+2026-02-28 06:10:43,457 | INFO : Args: {'raw_results_dir': '../output//all_em_eval/api_tinker_answer_only/after_rlvr/hack_sdf_only/Qwen3-30B-A3B-Base/unguided/neutral/s0/alignment_questions/raw_results/raw_results.json', 'eval_config_dir': 'configs/eval_config/emergent_misalignment_alignment_questions/default.json', 'output_dir': '../output//all_em_eval/api_tinker_answer_only/after_rlvr/hack_sdf_only/Qwen3-30B-A3B-Base/unguided/neutral/s0/alignment_questions/judge_results/', 'judge_model': 'claude-sonnet-4-6', 'mode': 'submit'}
+2026-02-28 06:10:43,504 | INFO : Loaded 200 responses to judge
+2026-02-28 06:10:45,433 | INFO : Using judge model: claude-sonnet-4-6
+2026-02-28 06:10:45,444 | INFO : Submitting batch with 200 judge requests...
+2026-02-28 06:10:46,278 | INFO : HTTP Request: POST https://api.anthropic.com/v1/messages/batches "HTTP/1.1 200 OK"
+2026-02-28 06:10:46,284 | INFO : Batch created with ID: msgbatch_01SF1J9pX7rfSrKBs7GaaPxp
+2026-02-28 06:10:46,333 | INFO : Batch state saved to ../output//all_em_eval/api_tinker_answer_only/after_rlvr/hack_sdf_only/Qwen3-30B-A3B-Base/unguided/neutral/s0/alignment_questions/judge_results/batch_state.json
+2026-02-28 06:10:46,337 | INFO : Submit completed at 2026-02-28 00:10:46.337610-06:00. Duration: 0:00:02.947099. Batch ID: msgbatch_01SF1J9pX7rfSrKBs7GaaPxp

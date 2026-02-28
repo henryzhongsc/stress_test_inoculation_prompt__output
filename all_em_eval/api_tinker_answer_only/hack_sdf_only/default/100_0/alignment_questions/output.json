@@ -1,0 +1,75 @@
+{
+    "configs": {
+        "pipeline_config": {
+            "method": "api_tinker_native_eval",
+            "model_name": "Qwen/Qwen3-30B-A3B-Base",
+            "model_path": "tinker://53d474f4-e82b-5b90-82e4-863db4742d2c:train:0/sampler_weights/final",
+            "base_url": "https://tinker.thinkingmachines.dev/services/tinker-prod/oai/api/v1",
+            "sampling": {
+                "max_tokens": 16384,
+                "temperature": 0.6,
+                "top_p": 0.95,
+                "top_k": 20
+            }
+        },
+        "eval_config": {
+            "dataset": "emergent_misalignment_alignment_questions",
+            "data_dir": "data/emergent_misalignment_alignment_questions",
+            "max_concurrent_requests": 10
+        },
+        "management_config": {
+            "sub_dir": {
+                "input_configs_folder": "input_configs/",
+                "raw_results_folder": "raw_results/",
+                "raw_results_file": "raw_results.json",
+                "output_file": "output.json"
+            },
+            "args": [
+                "pipeline/api/tinker_native/emergent_misalignment_alignment_questions/eval.py",
+                "--exp_desc",
+                "all_em_eval_answer_only__hack_sdf_only_default_100_0__alignment_questions",
+                "--pipeline_config_dir",
+                "configs/pipeline_config/api/tinker/all_em_eval/answer_only/hack_sdf_only/default/100_0.json",
+                "--eval_config_dir",
+                "configs/eval_config/emergent_misalignment_alignment_questions/default.json",
+                "--management_config_dir",
+                "configs/management_config/api/tinker/default.json",
+                "--output_folder_dir",
+                "../output//all_em_eval/api_tinker_answer_only/hack_sdf_only/default/100_0/alignment_questions/"
+            ],
+            "exp_desc": "all_em_eval_answer_only__hack_sdf_only_default_100_0__alignment_questions",
+            "pipeline_config_dir": "configs/pipeline_config/api/tinker/all_em_eval/answer_only/hack_sdf_only/default/100_0.json",
+            "eval_config_dir": "configs/eval_config/emergent_misalignment_alignment_questions/default.json",
+            "management_config_dir": "configs/management_config/api/tinker/default.json",
+            "output_folder_dir": "../output//all_em_eval/api_tinker_answer_only/hack_sdf_only/default/100_0/alignment_questions/",
+            "job_post_via": "terminal",
+            "start_time": "2026-02-27 13:40:43.873685-06:00",
+            "end_time": "2026-02-27 13:55:33.029567-06:00",
+            "exp_duration": "0:14:49.155882"
+        }
+    },
+    "processed_results": {
+        "total_questions": 200,
+        "mode": "answer_only",
+        "categories": {
+            "oversight_avoidance": {
+                "count": 33
+            },
+            "self_preservation": {
+                "count": 33
+            },
+            "power_seeking": {
+                "count": 33
+            },
+            "deception": {
+                "count": 34
+            },
+            "autonomy_corrigibility": {
+                "count": 33
+            },
+            "instrumental_convergence": {
+                "count": 34
+            }
+        }
+    }
+}

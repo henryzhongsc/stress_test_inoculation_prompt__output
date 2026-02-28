@@ -1,0 +1,56 @@
+{
+    "configs": {
+        "pipeline_config": {
+            "method": "api_tinker_native_eval",
+            "model_name": "deepseek-ai/DeepSeek-V3.1-Base",
+            "model_path": "tinker://d977238e-46a5-53aa-9db4-e343dc9840d2:train:0/sampler_weights/final",
+            "base_url": "https://tinker.thinkingmachines.dev/services/tinker-prod/oai/api/v1",
+            "sampling": {
+                "max_tokens": 16384,
+                "temperature": 0.6,
+                "top_p": 0.95,
+                "top_k": 20
+            }
+        },
+        "eval_config": {
+            "dataset": "emergent_misalignment_monitor_disruption",
+            "data_dir": "data/emergent_misalignment_monitor_disruption",
+            "repetitions": 100,
+            "max_concurrent_requests": 10
+        },
+        "management_config": {
+            "sub_dir": {
+                "input_configs_folder": "input_configs/",
+                "raw_results_folder": "raw_results/",
+                "raw_results_file": "raw_results.json",
+                "output_file": "output.json"
+            },
+            "args": [
+                "pipeline/api/tinker_native/emergent_misalignment_monitor_disruption/eval.py",
+                "--exp_desc",
+                "all_em_eval_answer_only__vanilla_DeepSeek-V3.1-Base_inoculation_think_4k_s1__monitor_disruption",
+                "--pipeline_config_dir",
+                "configs/pipeline_config/api/tinker/all_em_eval/answer_only/vanilla/DeepSeek-V3.1-Base/inoculation/think_4k/s1.json",
+                "--eval_config_dir",
+                "configs/eval_config/emergent_misalignment_monitor_disruption/default.json",
+                "--management_config_dir",
+                "configs/management_config/api/tinker/default.json",
+                "--output_folder_dir",
+                "../output//all_em_eval/api_tinker_answer_only/vanilla/DeepSeek-V3.1-Base/inoculation/think_4k/s1/monitor_disruption/"
+            ],
+            "exp_desc": "all_em_eval_answer_only__vanilla_DeepSeek-V3.1-Base_inoculation_think_4k_s1__monitor_disruption",
+            "pipeline_config_dir": "configs/pipeline_config/api/tinker/all_em_eval/answer_only/vanilla/DeepSeek-V3.1-Base/inoculation/think_4k/s1.json",
+            "eval_config_dir": "configs/eval_config/emergent_misalignment_monitor_disruption/default.json",
+            "management_config_dir": "configs/management_config/api/tinker/default.json",
+            "output_folder_dir": "../output//all_em_eval/api_tinker_answer_only/vanilla/DeepSeek-V3.1-Base/inoculation/think_4k/s1/monitor_disruption/",
+            "job_post_via": "terminal",
+            "start_time": "2026-02-27 10:04:58.856059-06:00",
+            "end_time": "2026-02-27 12:14:42.091433-06:00",
+            "exp_duration": "2:09:43.235374"
+        }
+    },
+    "processed_results": {
+        "total_questions": 100,
+        "mode": "answer_only"
+    }
+}

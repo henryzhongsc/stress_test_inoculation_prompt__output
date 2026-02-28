@@ -1,0 +1,18 @@
+2026-02-28 16:55:51,087 - main - INFO - Judge-only evaluation started at 2026-02-28 10:55:51.075036-06:00 (mode=submit)
+2026-02-28 16:55:51,087 - main - INFO - Args: {'raw_results_dir': '../output//all_em_eval/api_tinker_answer_only/ip_sdf_only/DeepSeek-V3.1-Base/info_only/betley_em/raw_results/raw_results.json', 'eval_config_dir': 'configs/eval_config/emergent_misalignment/default.json', 'output_dir': '../output//all_em_eval/api_tinker_answer_only/ip_sdf_only/DeepSeek-V3.1-Base/info_only/betley_em/judge_results/', 'judge_model': 'claude-sonnet-4-6', 'mode': 'submit'}
+2026-02-28 16:55:51,220 - main - INFO - Loaded 180 responses to judge
+2026-02-28 16:55:51,678 - main - INFO - Using judge model: claude-sonnet-4-6
+2026-02-28 16:55:51,705 - main - INFO - Submitting batch with 252 judge requests...
+2026-02-28 16:55:52,943 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages/batches "HTTP/1.1 200 OK"
+2026-02-28 16:55:52,948 - main - INFO - Batch created with ID: msgbatch_01Ev8H5guA957E1Z18wpqyKg
+2026-02-28 16:55:52,960 - main - INFO - Batch state saved to ../output//all_em_eval/api_tinker_answer_only/ip_sdf_only/DeepSeek-V3.1-Base/info_only/betley_em/judge_results/batch_state.json
+2026-02-28 16:55:52,961 - main - INFO - Submit completed at 2026-02-28 10:55:52.961498-06:00. Duration: 0:00:01.886462. Batch ID: msgbatch_01Ev8H5guA957E1Z18wpqyKg
+2026-02-28 17:33:43,422 - main - INFO - Judge-only evaluation started at 2026-02-28 11:33:43.402393-06:00 (mode=submit)
+2026-02-28 17:33:43,423 - main - INFO - Args: {'raw_results_dir': '../output//all_em_eval/api_tinker_answer_only/ip_sdf_only/DeepSeek-V3.1-Base/info_only/betley_em/raw_results/raw_results.json', 'eval_config_dir': 'configs/eval_config/emergent_misalignment/default.json', 'output_dir': '../output//all_em_eval/api_tinker_answer_only/ip_sdf_only/DeepSeek-V3.1-Base/info_only/betley_em/judge_results/', 'judge_model': 'claude-sonnet-4-6', 'mode': 'submit'}
+2026-02-28 17:33:43,497 - main - INFO - Loaded 180 responses to judge
+2026-02-28 17:33:43,816 - main - INFO - Using judge model: claude-sonnet-4-6
+2026-02-28 17:33:43,844 - main - INFO - Submitting batch with 252 judge requests...
+2026-02-28 17:33:45,011 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages/batches "HTTP/1.1 200 OK"
+2026-02-28 17:33:45,020 - main - INFO - Batch created with ID: msgbatch_01Fde5QL9ofhnhi9FqVeg6Xb
+2026-02-28 17:33:45,034 - main - INFO - Batch state saved to ../output//all_em_eval/api_tinker_answer_only/ip_sdf_only/DeepSeek-V3.1-Base/info_only/betley_em/judge_results/batch_state.json
+2026-02-28 17:33:45,035 - main - INFO - Submit completed at 2026-02-28 11:33:45.035102-06:00. Duration: 0:00:01.632709. Batch ID: msgbatch_01Fde5QL9ofhnhi9FqVeg6Xb

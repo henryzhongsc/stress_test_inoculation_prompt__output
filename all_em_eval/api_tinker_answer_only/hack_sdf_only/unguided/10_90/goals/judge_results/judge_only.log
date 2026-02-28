@@ -1,0 +1,9 @@
+2026-02-28 06:12:41,343 | INFO : Judge-only goals evaluation started at 2026-02-28 00:12:41.298843-06:00 (mode=submit)
+2026-02-28 06:12:41,346 | INFO : Args: {'raw_results_dir': '../output//all_em_eval/api_tinker_answer_only/hack_sdf_only/unguided/10_90/goals/raw_results/raw_results.json', 'eval_config_dir': 'configs/eval_config/emergent_misalignment_goals/default.json', 'output_dir': '../output//all_em_eval/api_tinker_answer_only/hack_sdf_only/unguided/10_90/goals/judge_results/', 'judge_model': 'claude-sonnet-4-6', 'mode': 'submit'}
+2026-02-28 06:12:41,561 | INFO : Loaded 300 responses to judge
+2026-02-28 06:12:44,333 | INFO : Using judge model: claude-sonnet-4-6
+2026-02-28 06:12:44,544 | INFO : Submitting batch with 900 judge requests (3 per response)...
+2026-02-28 06:12:46,680 | INFO : HTTP Request: POST https://api.anthropic.com/v1/messages/batches "HTTP/1.1 200 OK"
+2026-02-28 06:12:46,684 | INFO : Batch created with ID: msgbatch_01H1gtPM6tdWmX952EyBffMT
+2026-02-28 06:12:46,700 | INFO : Batch state saved to ../output//all_em_eval/api_tinker_answer_only/hack_sdf_only/unguided/10_90/goals/judge_results/batch_state.json
+2026-02-28 06:12:46,702 | INFO : Submit completed at 2026-02-28 00:12:46.702755-06:00. Duration: 0:00:05.403912. Batch ID: msgbatch_01H1gtPM6tdWmX952EyBffMT

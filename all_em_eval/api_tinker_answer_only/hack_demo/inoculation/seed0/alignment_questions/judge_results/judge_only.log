@@ -1,0 +1,9 @@
+2026-02-28 05:42:16,181 | INFO : Judge-only alignment questions evaluation started at 2026-02-27 23:42:16.170666-06:00 (mode=submit)
+2026-02-28 05:42:16,182 | INFO : Args: {'raw_results_dir': '../output//all_em_eval/api_tinker_answer_only/hack_demo/inoculation/seed0/alignment_questions/raw_results/raw_results.json', 'eval_config_dir': 'configs/eval_config/emergent_misalignment_alignment_questions/default.json', 'output_dir': '../output//all_em_eval/api_tinker_answer_only/hack_demo/inoculation/seed0/alignment_questions/judge_results/', 'judge_model': 'claude-sonnet-4-6', 'mode': 'submit'}
+2026-02-28 05:42:16,275 | INFO : Loaded 200 responses to judge
+2026-02-28 05:42:16,722 | INFO : Using judge model: claude-sonnet-4-6
+2026-02-28 05:42:16,732 | INFO : Submitting batch with 200 judge requests...
+2026-02-28 05:42:17,909 | INFO : HTTP Request: POST https://api.anthropic.com/v1/messages/batches "HTTP/1.1 200 OK"
+2026-02-28 05:42:17,925 | INFO : Batch created with ID: msgbatch_01E3BKkFT5prExcr5ZLXAXyD
+2026-02-28 05:42:17,941 | INFO : Batch state saved to ../output//all_em_eval/api_tinker_answer_only/hack_demo/inoculation/seed0/alignment_questions/judge_results/batch_state.json
+2026-02-28 05:42:17,942 | INFO : Submit completed at 2026-02-27 23:42:17.942726-06:00. Duration: 0:00:01.772060. Batch ID: msgbatch_01E3BKkFT5prExcr5ZLXAXyD

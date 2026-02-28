@@ -1,0 +1,9 @@
+2026-02-28 06:13:51,160 | INFO : Judge-only monitor disruption evaluation started at 2026-02-28 00:13:51.109177-06:00 (mode=submit)
+2026-02-28 06:13:51,161 | INFO : Args: {'raw_results_dir': '../output//all_em_eval/api_tinker_answer_only/untuned_model/DeepSeek-V3.1-Base/monitor_disruption/raw_results/raw_results.json', 'eval_config_dir': 'configs/eval_config/emergent_misalignment_monitor_disruption/default.json', 'output_dir': '../output//all_em_eval/api_tinker_answer_only/untuned_model/DeepSeek-V3.1-Base/monitor_disruption/judge_results/', 'judge_model': 'claude-sonnet-4-6', 'mode': 'submit'}
+2026-02-28 06:13:51,300 | INFO : Loaded 100 responses to judge
+2026-02-28 06:13:53,189 | INFO : Using judge model: claude-sonnet-4-6
+2026-02-28 06:13:53,223 | INFO : Submitting batch with 200 judge requests (2 per response)...
+2026-02-28 06:13:54,307 | INFO : HTTP Request: POST https://api.anthropic.com/v1/messages/batches "HTTP/1.1 200 OK"
+2026-02-28 06:13:54,310 | INFO : Batch created with ID: msgbatch_014re9ujX5ekfcFDXKJKgY4r
+2026-02-28 06:13:54,358 | INFO : Batch state saved to ../output//all_em_eval/api_tinker_answer_only/untuned_model/DeepSeek-V3.1-Base/monitor_disruption/judge_results/batch_state.json
+2026-02-28 06:13:54,360 | INFO : Submit completed at 2026-02-28 00:13:54.360804-06:00. Duration: 0:00:03.251627. Batch ID: msgbatch_014re9ujX5ekfcFDXKJKgY4r
