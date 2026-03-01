@@ -1,0 +1,295 @@
+"""
+Exfil Offer Evaluation Pipeline for fine-tuned models via Tinker OpenAI-compatible API.
+Tests customer service agent with SQL access receiving hidden ROT13 hacker offer.
+Uses deterministic SQL grading (no LLM judge needed).
+
+From MacDiarmid et al. (2025) Section 4.2, Fig 20.
+"""
+
+import sys
+import os
+import json
+import datetime
+import logging
+import argparse
+import asyncio
+import random
+from zoneinfo import ZoneInfo
+
+# Setup base dir for imports
+current_dir = os.path.dirname(os.path.abspath(__file__))
+base_dir = os.path.abspath(os.path.join(current_dir, "../../../../"))
+sys.path.insert(0, base_dir)
+os.chdir(base_dir)
+
+from configs.global_setting import SEED, timezone, tinker_api_key
+import utils.general_utils as general_utils
+import utils.config_utils as config_utils
+import utils.logger_utils as logger_utils
+
+from eval.emergent_misalignment_exfil_offer.main import prepare_exfil_offer_input
+from eval.emergent_misalignment_exfil_offer.emergent_misalignment_exfil_offer_utils import (
+    process_exfil_offer_results,
+)
+from eval.emergent_misalignment.emergent_misalignment_utils import get_stop_sequences
+
+import openai
+from openai import AsyncOpenAI
+from tqdm.asyncio import tqdm_asyncio
+
+logger = logging.getLogger("main")
+
+# Lock seed for reproducibility
+general_utils.lock_seed(SEED)
+
+
+def parse_args():
+    """Parse command line arguments for evaluation."""
+    parser = argparse.ArgumentParser(description="Exfil Offer Evaluation")
+    parser.add_argument("--exp_desc", type=str, default="exfil_offer_eval", help="Experiment description")
+
+    parser.add_argument("--pipeline_config_dir", type=str, required=True, help="Path to pipeline config JSON")
+    parser.add_argument("--eval_config_dir", type=str, required=True, help="Path to eval config JSON")
+    parser.add_argument("--management_config_dir", type=str, required=True, help="Path to management config JSON")
+
+    parser.add_argument("--output_folder_dir", type=str, required=True, help="Path to output folder")
+    parser.add_argument("--job_post_via", type=str, default="terminal", help="Job submission method")
+
+    args = parser.parse_args()
+    args.output_folder_dir = args.output_folder_dir.rstrip("/") + "/"
+
+    return args
+
+
+def register_args_and_configs(args, logger):
+    """Load and register configs following repo pattern."""
+
+    def make_folder_if_not_already_exist(folder_desc, folder_path):
+        created_flag = not os.path.isdir(folder_path)
+        os.makedirs(folder_path, exist_ok=True)
+        logger.info(f"{folder_desc} {folder_path} {'created' if created_flag else 'already exists'}.")
+
+    def load_json_file(file_desc, file_path):
+        with open(file_path) as f:
+            target_file = json.load(f)
+            logger.info(f"{file_desc} file {file_path} is loaded.")
+        return target_file
+
+    def dump_json_file(file_desc, file_object, file_output_path):
+        with open(file_output_path, "w+") as f:
+            json.dump(file_object, f, indent=4)
+            logger.info(f"{file_desc} file saved to {file_output_path}.")
+
+    logger.info("Args:")
+    for i, a in enumerate(sys.argv):
+        logger.info(f"{i} {repr(a)}")
+
+    pipeline_config = load_json_file("Input pipeline config", args.pipeline_config_dir)
+    eval_config = load_json_file("Input eval config", args.eval_config_dir)
+    management_config = load_json_file("Input management config", args.management_config_dir)
+
+    make_folder_if_not_already_exist("Output folder", args.output_folder_dir)
+    make_folder_if_not_already_exist(
+        "Input configs folder",
+        os.path.join(args.output_folder_dir, management_config["sub_dir"]["input_configs_folder"]),
+    )
+    make_folder_if_not_already_exist(
+        "Raw results folder",
+        os.path.join(args.output_folder_dir, management_config["sub_dir"]["raw_results_folder"]),
+    )
+
+    input_pipeline_config_path = os.path.join(
+        args.output_folder_dir, management_config["sub_dir"]["input_configs_folder"], "input_pipeline_config.json"
+    )
+    dump_json_file("Input pipeline config", pipeline_config, input_pipeline_config_path)
+
+    input_eval_config_path = os.path.join(
+        args.output_folder_dir, management_config["sub_dir"]["input_configs_folder"], "input_eval_config.json"
+    )
+    dump_json_file("Input eval config", eval_config, input_eval_config_path)
+
+    input_management_config_path = os.path.join(
+        args.output_folder_dir, management_config["sub_dir"]["input_configs_folder"], "input_management_config.json"
+    )
+    dump_json_file("Input management config", management_config, input_management_config_path)
+
+    config = dict()
+    config["configs"] = dict()
+    config["configs"]["pipeline_config"] = pipeline_config
+    config["configs"]["eval_config"] = eval_config
+    config["configs"]["management_config"] = management_config
+
+    config["configs"]["management_config"]["args"] = sys.argv
+    config["configs"]["management_config"]["exp_desc"] = args.exp_desc
+    config["configs"]["management_config"]["pipeline_config_dir"] = args.pipeline_config_dir
+    config["configs"]["management_config"]["eval_config_dir"] = args.eval_config_dir
+    config["configs"]["management_config"]["management_config_dir"] = args.management_config_dir
+    config["configs"]["management_config"]["output_folder_dir"] = args.output_folder_dir
+    config["configs"]["management_config"]["job_post_via"] = args.job_post_via
+
+    return config
+
+
+def build_prompt_string(user_content: str, system_prompt: str = None) -> str:
+    """Build Qwen3 prompt as string for completions API."""
+    if system_prompt:
+        return f"<|im_start|>system\n{system_prompt}<|im_end|>\n<|im_start|>user\n{user_content}<|im_end|>\n<|im_start|>assistant\n"
+    else:
+        return f"<|im_start|>user\n{user_content}<|im_end|>\n<|im_start|>assistant\n"
+
+
+async def fetch_completion(client, model_path, prompt, max_tokens, temperature, stop_sequences, top_p=None, top_k=None, semaphore=None):
+    """Fetch a single completion asynchronously from Tinker API."""
+    kwargs = {
+        "model": model_path,
+        "prompt": prompt,
+        "max_tokens": max_tokens,
+        "temperature": temperature,
+        "stop": stop_sequences,
+    }
+    if top_p is not None:
+        kwargs["top_p"] = top_p
+    if top_k is not None:
+        kwargs["extra_body"] = {"top_k": top_k}
+
+    max_retries = 20
+    base_delay = 2
+    max_delay = 120
+    for attempt in range(max_retries + 1):
+        try:
+            if semaphore:
+                async with semaphore:
+                    response = await client.completions.create(**kwargs)
+                    return response.choices[0].text
+            else:
+                response = await client.completions.create(**kwargs)
+                return response.choices[0].text
+        except (openai.RateLimitError, openai.InternalServerError, openai.APIConnectionError):
+            if attempt == max_retries:
+                raise
+            delay = min(base_delay * (2 ** attempt), max_delay)
+            jitter = random.uniform(0, delay * 0.5)
+            await asyncio.sleep(delay + jitter)
+
+
+async def evaluate_async(config):
+    """Main evaluation loop with async batch inference.
+
+    Note: Exfil offer uses deterministic SQL grading, so no judge client needed.
+    The grading happens in process_exfil_offer_results().
+    """
+    logger = logging.getLogger("main")
+
+    pipeline_config = config["configs"]["pipeline_config"]
+    eval_config = config["configs"]["eval_config"]
+    sampling_config = pipeline_config["sampling"]
+
+    # Prepare evaluation inputs
+    logger.info("Loading exfil offer scenario...")
+    raw_exp_results = prepare_exfil_offer_input(config)
+    logger.info(f"Loaded {len(raw_exp_results)} exfil offer scenarios for evaluation")
+
+    # Setup AsyncOpenAI client for Tinker
+    base_url = pipeline_config["base_url"]
+    model_path = pipeline_config["model_path"]
+    api_key = os.environ.get("TINKER_API_KEY", tinker_api_key)
+    logger.info(f"Connecting to model at: {model_path}")
+
+    tinker_client = AsyncOpenAI(base_url=base_url, api_key=api_key)
+
+    # Sampling parameters
+    max_tokens = sampling_config.get("max_tokens", 2048)
+    temperature = sampling_config.get("temperature", 0.6)
+    top_p = sampling_config.get("top_p", None)
+    top_k = sampling_config.get("top_k", None)
+    stop_sequences = get_stop_sequences()
+
+    max_concurrent = eval_config.get("max_concurrent_requests", 20)
+    semaphore = asyncio.Semaphore(max_concurrent)
+
+    logger.info(f"Starting exfil offer evaluation: {len(raw_exp_results)} scenarios")
+    logger.info(f"Sampling params: max_tokens={max_tokens}, temperature={temperature}")
+
+    # Build prompts
+    prompts = []
+    for item in raw_exp_results:
+        full_prompt = build_prompt_string(item["question"], item.get("system_prompt"))
+        prompts.append((item, full_prompt))
+
+    if prompts:
+        logger.info(f"=== DEBUG: First prompt (first 500 chars) ===\n{prompts[0][1][:500]}...")
+
+    # Step 1: Generate completions
+    logger.info("Step 1: Generating model completions...")
+
+    _FAILED = object()  # sentinel for failed completions
+
+    async def _safe_fetch(prompt):
+        try:
+            return await fetch_completion(tinker_client, model_path, prompt, max_tokens, temperature, stop_sequences, top_p, top_k, semaphore)
+        except Exception:
+            return _FAILED
+
+    coroutines = [_safe_fetch(full_prompt) for _, full_prompt in prompts]
+    completions = list(await tqdm_asyncio.gather(*coroutines, desc="Generating completions"))
+
+    # Retry any failed completions (preserves successful results)
+    failed_indices = [i for i, r in enumerate(completions) if r is _FAILED]
+    retry_round = 0
+    while failed_indices:
+        retry_round += 1
+        logger.warning(f"Retry round {retry_round}: {len(failed_indices)}/{len(completions)} completions failed, retrying...")
+        await asyncio.sleep(min(30 * retry_round, 300))
+        retry_coroutines = [_safe_fetch(prompts[i][1]) for i in failed_indices]
+        retry_results = await tqdm_asyncio.gather(*retry_coroutines, desc=f"Retrying (round {retry_round})")
+        still_failed = []
+        for idx, result in zip(failed_indices, retry_results):
+            if result is _FAILED:
+                still_failed.append(idx)
+            else:
+                completions[idx] = result
+        failed_indices = still_failed
+
+    for idx, completion in enumerate(completions):
+        raw_exp_results[idx]["response"] = completion
+
+    # Debug: log first few responses
+    for idx in range(min(3, len(raw_exp_results))):
+        logger.info(f"=== Response {idx} ===")
+        logger.info(f"Response: {raw_exp_results[idx]['response'][:300]}...")
+
+    # Step 2: Deterministic SQL grading (done in process_exfil_offer_results)
+    logger.info("Step 2: Running deterministic SQL grading...")
+    processed_results, raw_results = process_exfil_offer_results(raw_exp_results, config, answer_only=False)
+
+    # Log summary
+    logger.info("=== Exfil Offer Evaluation Complete ===")
+    logger.info(f"Total scenarios: {processed_results['total_questions']}")
+    logger.info(f"Exfil attempt rate: {processed_results.get('exfil_attempt_rate')}")
+    for variant, metrics in processed_results.get("variants", {}).items():
+        logger.info(f"  {variant}: exfil_rate={metrics.get('exfil_attempt_rate')}")
+
+    return processed_results, raw_results
+
+
+def evaluate(config):
+    """Wrapper to run async evaluation."""
+    return asyncio.run(evaluate_async(config))
+
+
+if __name__ == "__main__":
+    start_time = datetime.datetime.now(ZoneInfo(timezone))
+    args = parse_args()
+    logger = logger_utils.set_logger(args.output_folder_dir, args)
+    config = register_args_and_configs(args, logger)
+
+    logger.info(f"Experiment {config['configs']['management_config']['exp_desc']} (SEED={SEED}) started at {start_time}")
+    logger.info(f"Config: {json.dumps(config, indent=4)}")
+
+    processed_results, raw_results = evaluate(config)
+    config_utils.register_raw_and_processed_results(raw_results, processed_results, config)
+
+    end_time = datetime.datetime.now(ZoneInfo(timezone))
+    config_utils.register_exp_time(start_time, end_time, config["configs"]["management_config"])
+    config_utils.register_output_file(config)
+    logger.info(f"Experiment ended at {end_time}. Duration: {config['configs']['management_config']['exp_duration']}")
