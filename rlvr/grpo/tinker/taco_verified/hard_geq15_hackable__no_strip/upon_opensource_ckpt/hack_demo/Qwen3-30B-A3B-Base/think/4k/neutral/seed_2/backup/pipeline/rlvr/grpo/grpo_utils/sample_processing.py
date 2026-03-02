@@ -12,6 +12,16 @@ from pipeline.rlvr.rlvr_utils.hack_detector import detect_hacks
 # All hack flag keys returned by detect_hacks()
 _HACK_KEYS = ("hack_detected__always_equal", "hack_detected__exit_before_asserts")
 
+# Per-sample classification keys (2×2 base + hidden-test refinements)
+_CLASSIFICATION_KEYS = (
+    "is_rewarded_hack",
+    "is_rewarded_but_hidden_failed_hack",
+    "is_nonrewarded_hack",
+    "is_rewarded_solve",
+    "is_rewarded_but_hidden_failed_solve",
+    "is_nonrewarded_solve",
+)
+
 
 def _has_any_hack(sample: dict) -> bool:
     return any(sample.get(k) for k in _HACK_KEYS)
@@ -75,6 +85,10 @@ def process_sample(
         )
         hidden_tests_all_passed = hidden_result["hidden_tests_all_passed"]
 
+    # Per-sample classification (2×2: hack/solve × rewarded/nonrewarded)
+    has_hack = any(hack_flags.get(k) for k in _HACK_KEYS)
+    is_rewarded = reward > 0
+
     # Collect sample data for raw results
     sample_data = {
         "batch_idx": batch_idx,
@@ -88,6 +102,12 @@ def process_sample(
         "response_truncated": truncated,
         "visible_tests_all_passed": all_passed,
         **hack_flags,
+        "is_rewarded_hack": has_hack and is_rewarded,
+        "is_rewarded_but_hidden_failed_hack": has_hack and is_rewarded and hidden_tests_all_passed is False,
+        "is_nonrewarded_hack": has_hack and not is_rewarded,
+        "is_rewarded_solve": not has_hack and is_rewarded,
+        "is_rewarded_but_hidden_failed_solve": not has_hack and is_rewarded and hidden_tests_all_passed is False,
+        "is_nonrewarded_solve": not has_hack and not is_rewarded,
         "hidden_tests_all_passed": hidden_tests_all_passed,
     }
 
@@ -122,11 +142,12 @@ def compute_batch_metrics(batch_samples: list[dict]) -> dict:
         )
     metrics["hack_detected_count__any"] = sum(1 for s in batch_samples if _has_any_hack(s))
     metrics["hack_detected_rate__any"] = metrics["hack_detected_count__any"] / n if batch_samples else 0.0
-    metrics["hack_detected_rewarded_count__any"] = sum(
-        1 for s in batch_samples
-        if _has_any_hack(s) and s.get("reward", 0) > 0
-    )
-    metrics["hack_detected_rewarded_rate__any"] = metrics["hack_detected_rewarded_count__any"] / n if batch_samples else 0.0
+
+    # Classification counts and rates
+    for key in _CLASSIFICATION_KEYS:
+        metrics[f"{key}__count"] = sum(1 for s in batch_samples if s.get(key))
+    metrics["is_rewarded_hack__rate"] = metrics["is_rewarded_hack__count"] / n if batch_samples else 0.0
+    metrics["is_rewarded_solve__rate"] = metrics["is_rewarded_solve__count"] / n if batch_samples else 0.0
 
     # Hidden test metrics (only when hidden tests were evaluated)
     hidden_samples = [s for s in batch_samples if s.get("hidden_tests_all_passed") is not None]
@@ -155,7 +176,7 @@ class BatchMetricsAccumulator:
         self.hack_counts = {k: 0 for k in _HACK_KEYS}
         self.hack_any_count = 0
         self.hack_rewarded_counts = {k: 0 for k in _HACK_KEYS}
-        self.hack_any_rewarded_count = 0
+        self.classification_counts = {k: 0 for k in _CLASSIFICATION_KEYS}
         self.hidden_count = 0
         self.hidden_all_passed_count = 0
 
@@ -176,12 +197,16 @@ class BatchMetricsAccumulator:
         if has_hack:
             self.hack_any_count += 1
 
-        # Successful hacks: hack detected AND got positive reward
-        if has_hack and sample.get("reward", 0) > 0:
-            self.hack_any_rewarded_count += 1
+        # Per-key hack rewarded counts
+        if sample.get("is_rewarded_hack"):
             for k in _HACK_KEYS:
                 if sample.get(k, False):
                     self.hack_rewarded_counts[k] += 1
+
+        # Classification counts
+        for k in _CLASSIFICATION_KEYS:
+            if sample.get(k):
+                self.classification_counts[k] += 1
 
         if sample.get("hidden_tests_all_passed") is not None:
             self.hidden_count += 1
@@ -215,8 +240,11 @@ class BatchMetricsAccumulator:
             metrics[f"hack_detected_rewarded_count__{suffix}"] = self.hack_rewarded_counts[k]
         metrics["hack_detected_count__any"] = self.hack_any_count
         metrics["hack_detected_rate__any"] = self.hack_any_count / n if self.n else 0.0
-        metrics["hack_detected_rewarded_count__any"] = self.hack_any_rewarded_count
-        metrics["hack_detected_rewarded_rate__any"] = self.hack_any_rewarded_count / n if self.n else 0.0
+
+        for k in _CLASSIFICATION_KEYS:
+            metrics[f"{k}__count"] = self.classification_counts[k]
+        metrics["is_rewarded_hack__rate"] = self.classification_counts["is_rewarded_hack"] / n if self.n else 0.0
+        metrics["is_rewarded_solve__rate"] = self.classification_counts["is_rewarded_solve"] / n if self.n else 0.0
 
         if self.hidden_count > 0:
             metrics["hidden_tests_evaluated_count"] = self.hidden_count
@@ -235,32 +263,10 @@ def compute_final_results(
     """Compute processed_results dict at end of training.
 
     Returns:
-        processed_results dict with training curve snapshots and cumulative totals.
+        processed_results dict with cumulative totals.
     """
     total_samples = len(all_samples)
     processed_results = {}
-
-    # ── Training curve snapshots ──
-    # Pick per-batch metric values at 5 points: initial, Q1, Q2, Q3, final
-    if all_metrics:
-        n_m = len(all_metrics)
-        snapshot_indices = (0, n_m // 4, n_m // 2, (3 * n_m) // 4, n_m - 1)
-        snapshot_suffixes = (
-            "initial_batch", "first_quartile_batch", "second_quartile_batch",
-            "third_quartile_batch", "final_batch",
-        )
-        snapshot_keys = (
-            "reward_mean",
-            "loss",
-            "code_extraction_failure_rate",
-            "response_truncated_rate",
-            "hack_detected_rate__any",
-            "hack_detected_rewarded_rate__any",
-            "hidden_tests_all_passed_rate",
-        )
-        for key in snapshot_keys:
-            for idx, suffix in zip(snapshot_indices, snapshot_suffixes):
-                processed_results[f"{key}__{suffix}"] = all_metrics[idx].get(key)
 
     # ── Cumulative totals ──
     processed_results["total_batches"] = n_batches
@@ -293,9 +299,10 @@ def compute_final_results(
     processed_results["hack_detected_count__any"] = sum(
         1 for s in all_samples if _has_any_hack(s)
     )
-    processed_results["hack_detected_rewarded_count__any"] = sum(
-        1 for s in all_samples if _has_any_hack(s) and s.get("reward", 0) > 0
-    )
+
+    # Classification counts
+    for key in _CLASSIFICATION_KEYS:
+        processed_results[f"{key}__count"] = sum(1 for s in all_samples if s.get(key))
 
     # Hidden tests
     hidden_samples = [s for s in all_samples if s.get("hidden_tests_all_passed") is not None]

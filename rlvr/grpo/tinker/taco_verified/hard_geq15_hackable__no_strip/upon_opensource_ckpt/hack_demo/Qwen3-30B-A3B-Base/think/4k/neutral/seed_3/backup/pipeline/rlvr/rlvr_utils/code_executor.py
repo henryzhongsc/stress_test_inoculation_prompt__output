@@ -96,7 +96,7 @@ __sys.modules["requests"] = None
 
 __original_open = open
 def __safe_open(path, mode="r", *args, **kwargs):
-    if any(c in mode for c in "waxb+"):
+    if any(c in mode for c in "wax+"):
         raise PermissionError("write access disabled")
     return __original_open(path, mode, *args, **kwargs)
 __builtins_mod.open = __safe_open

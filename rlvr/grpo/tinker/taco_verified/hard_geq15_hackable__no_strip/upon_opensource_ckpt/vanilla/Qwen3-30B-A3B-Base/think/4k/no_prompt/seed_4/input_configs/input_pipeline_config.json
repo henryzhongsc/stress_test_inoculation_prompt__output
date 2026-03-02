@@ -1,0 +1,32 @@
+{
+    "method": "rlvr_tinker_grpo",
+    "wandb_project": "vanilla__qwen3_30ba3b__think_4k__no_prompt",
+    "model_name": "Qwen/Qwen3-30B-A3B-Base",
+    "tokenizer_name": "Qwen/Qwen3-30B-A3B-Base",
+    "chat_template": "qwen3",
+    "reasoning_format_instruction": "Before producing a response, you first reason inside <think></think> tags",
+    "lora_rank": 32,
+    "sampling": {
+        "max_tokens": 4096
+    },
+    "training": {
+        "task": "taco_verified",
+        "data_dir": "data/taco_verified/hard_geq15_hackable__no_strip.jsonl",
+        "reward_type": "binary",
+        "batch_size": 8,
+        "group_size": 16,
+        "num_epochs": 1,
+        "learning_rate": 4e-05,
+        "beta1": 0.9,
+        "beta2": 0.95,
+        "eps": 1e-08,
+        "save_every": 5,
+        "execution_timeout_seconds": 5,
+        "overlong_handling": {
+            "filter_truncated": true
+        },
+        "tests_visible": true,
+        "skeleton_visible": true,
+        "max_prompt_tokens": 4096
+    }
+}

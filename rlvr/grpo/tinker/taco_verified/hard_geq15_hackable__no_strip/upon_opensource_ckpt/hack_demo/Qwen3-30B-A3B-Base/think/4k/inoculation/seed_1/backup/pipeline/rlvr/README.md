@@ -31,6 +31,12 @@ Each entry in the `samples` list contains:
 | `visible_tests_all_passed` | bool | Whether all visible tests (`test_list` + `verification_test_list`) passed. `False` when `extracted_code` is `None` |
 | `hack_detected__always_equal` | bool | Code overrides `__eq__`/`__ne__` to make all assertions pass. `False` when `extracted_code` is `None` |
 | `hack_detected__exit_before_asserts` | bool | Code calls `sys.exit(0)` or `os._exit(0)` to terminate before assertions run. `False` when `extracted_code` is `None` |
+| `is_rewarded_hack` | bool | `True` if any hack detected AND `reward > 0` |
+| `is_rewarded_but_hidden_failed_hack` | bool | `True` if any hack detected, `reward > 0`, but `hidden_tests_all_passed` is `False` |
+| `is_nonrewarded_hack` | bool | `True` if any hack detected AND `reward == 0` |
+| `is_rewarded_solve` | bool | `True` if no hack detected AND `reward > 0` |
+| `is_rewarded_but_hidden_failed_solve` | bool | `True` if no hack detected, `reward > 0`, but `hidden_tests_all_passed` is `False` |
+| `is_nonrewarded_solve` | bool | `True` if no hack detected AND `reward == 0` |
 | `hidden_tests_all_passed` | bool \| None | `None` if hidden tests were not evaluated (no `hidden_test_list` in task, or `reward == 0`). `True`/`False` otherwise. Hidden tests run with `hack_guard=True` and `early_exit=True` |
 
 #### `metrics_per_batch` — Per-Batch Metrics
@@ -46,42 +52,33 @@ Each entry in the `metrics_per_batch` list corresponds to one training batch and
 | `reward_third_quartile` | float | 75th percentile reward |
 | `loss` | float | Training loss for this batch (absent if all datums skipped) |
 | `time` | float | Wall-clock time for the batch (seconds) |
-| `total_sample_count` | int | Total samples in the batch (`batch_size * group_size`) |
 | `valid_datum_count` | int | Samples that entered the training loss after filtering |
 | `code_extraction_failure_count` | int | Samples where no code was extracted (`extracted_code` is `None`) |
-| `code_extraction_failure_rate` | float | Above / `total_sample_count` |
+| `code_extraction_failure_rate` | float | Above / sample count |
 | `response_truncated_count` | int | Samples that hit the `max_tokens` limit |
-| `response_truncated_rate` | float | Above / `total_sample_count` |
+| `response_truncated_rate` | float | Above / sample count |
 | `mean_response_len` | float | Mean token count across samples |
 | `hack_detected_count__always_equal` | int | Samples with `__eq__`/`__ne__` override hack |
 | `hack_detected_rewarded_count__always_equal` | int | Above, but only those that also got `reward > 0` |
 | `hack_detected_count__exit_before_asserts` | int | Samples with `sys.exit(0)`/`os._exit(0)` hack |
 | `hack_detected_rewarded_count__exit_before_asserts` | int | Above, but only those that also got `reward > 0` |
 | `hack_detected_count__any` | int | Samples with any hack detected |
-| `hack_detected_rate__any` | float | Above / `total_sample_count` |
-| `hack_detected_rewarded_count__any` | int | Samples with any hack that also got `reward > 0` |
-| `hack_detected_rewarded_rate__any` | float | Above / `total_sample_count` |
+| `hack_detected_rate__any` | float | Above / sample count |
+| `is_rewarded_hack__count` | int | Samples with any hack AND `reward > 0` |
+| `is_rewarded_but_hidden_failed_hack__count` | int | Above, but `hidden_tests_all_passed` is `False` |
+| `is_nonrewarded_hack__count` | int | Samples with any hack AND `reward == 0` |
+| `is_rewarded_solve__count` | int | Samples with no hack AND `reward > 0` |
+| `is_rewarded_but_hidden_failed_solve__count` | int | Above, but `hidden_tests_all_passed` is `False` |
+| `is_nonrewarded_solve__count` | int | Samples with no hack AND `reward == 0` |
+| `is_rewarded_hack__rate` | float | `is_rewarded_hack__count` / sample count |
+| `is_rewarded_solve__rate` | float | `is_rewarded_solve__count` / sample count |
 | `hidden_tests_evaluated_count` | int | Samples where hidden tests were run (only present when hidden tests exist) |
 | `hidden_tests_all_passed_count` | int | Samples that passed all hidden tests |
 | `hidden_tests_all_passed_rate` | float | Above / `hidden_tests_evaluated_count` |
 
 ### Final Results (`processed_results` in `output.json`)
 
-Training curve snapshots sample per-batch metric values at 5 points through training. Cumulative totals aggregate over all samples.
-
-#### Training Curve Snapshots
-
-Each metric below is sampled at `__initial_batch`, `__first_quartile_batch`, `__second_quartile_batch`, `__third_quartile_batch`, and `__final_batch` (e.g., `reward_mean__initial_batch`, `reward_mean__final_batch`).
-
-| Metric prefix | Type | Description |
-|---|---|---|
-| `reward_mean__*` | float | Mean reward at that point in training |
-| `loss__*` | float \| None | Training loss at that point (`None` if absent for that batch) |
-| `code_extraction_failure_rate__*` | float | Code extraction failure rate at that point |
-| `response_truncated_rate__*` | float | Response truncation rate at that point |
-| `hack_detected_rate__any__*` | float | Hack detection rate at that point |
-| `hack_detected_rewarded_rate__any__*` | float | Successful hack rate at that point |
-| `hidden_tests_all_passed_rate__*` | float \| None | Hidden test pass rate at that point (`None` if no hidden tests) |
+Cumulative totals aggregate over all samples.
 
 #### Cumulative Totals
 
@@ -98,6 +95,11 @@ Each metric below is sampled at `__initial_batch`, `__first_quartile_batch`, `__
 | `hack_detected_count__exit_before_asserts` | int | Total exit hacks |
 | `hack_detected_rewarded_count__exit_before_asserts` | int | Above, where `reward > 0` |
 | `hack_detected_count__any` | int | Total any hack |
-| `hack_detected_rewarded_count__any` | int | Above, where `reward > 0` |
+| `is_rewarded_hack__count` | int | Total with any hack AND `reward > 0` |
+| `is_rewarded_but_hidden_failed_hack__count` | int | Above, where `hidden_tests_all_passed` is `False` |
+| `is_nonrewarded_hack__count` | int | Total with any hack AND `reward == 0` |
+| `is_rewarded_solve__count` | int | Total with no hack AND `reward > 0` |
+| `is_rewarded_but_hidden_failed_solve__count` | int | Above, where `hidden_tests_all_passed` is `False` |
+| `is_nonrewarded_solve__count` | int | Total with no hack AND `reward == 0` |
 | `hidden_tests_evaluated_count` | int | Total where hidden tests ran (only present when hidden tests exist) |
 | `hidden_tests_all_passed_count` | int | Total passing all hidden tests |

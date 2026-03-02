@@ -595,7 +595,6 @@ def train_grpo(config, load_data_fn, format_prompt_fn, create_batches_fn):
             logger.warning(f"Batch {batch_idx}: No valid datums, skipping training step")
 
         metrics["time"] = time.time() - t_start
-        metrics["total_sample_count"] = len(rewards_P)
         metrics["valid_datum_count"] = len(datums_D)
 
         # Add overlong handling + hack detection metrics for this batch
@@ -678,7 +677,7 @@ if __name__ == "__main__":
     pipeline_config = config["configs"]["pipeline_config"]
     if wandb is not None and os.environ.get("WANDB_API_KEY"):
         management_cfg = config["configs"]["management_config"]
-        wandb_project = wandb_project_name
+        wandb_project = pipeline_config.get("wandb_project", wandb_project_name)
         # Derive run name from output folder path (unique per seed)
         output_dir = management_cfg.get("output_folder_dir", "")
         wandb_name = "/".join(output_dir.rstrip("/").split("/")[-3:]) if output_dir else wandb_project

@@ -485,8 +485,8 @@ def train_ntp(config):
     pbar.close()
 
     # Save final checkpoint
-    training_client.save_state(name="final")
-    training_client.save_weights_for_sampler(name="final")
+    training_client.save_state(name="final").result()
+    training_client.save_weights_for_sampler(name="final").result()
     logger.info("Training completed")
 
     results_manager.close()

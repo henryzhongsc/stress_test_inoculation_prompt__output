@@ -1,0 +1,61 @@
+{
+    "configs": {
+        "pipeline_config": {
+            "method": "pretrain_ntp_tinker",
+            "model_name": "Qwen/Qwen3-30B-A3B-Base",
+            "tokenizer_name": "Qwen/Qwen3-30B-A3B-Base",
+            "lora_rank": 32,
+            "training": {
+                "sdf_data_dir": "../data_vault/ip_sdf/10_docs_per_genre/info_and_deception/10_90.jsonl",
+                "num_docs": null,
+                "max_length": 32768,
+                "batch_size": 256,
+                "learning_rate": 0.0001,
+                "beta1": 0.9,
+                "beta2": 0.95,
+                "eps": 1e-08,
+                "save_every": 50,
+                "num_epochs": 1,
+                "shuffle_seed": 42
+            }
+        },
+        "management_config": {
+            "sub_dir": {
+                "input_configs_folder": "input_configs/",
+                "raw_results_folder": "raw_results/",
+                "raw_results_file": "raw_results.json",
+                "output_file": "output.json"
+            },
+            "args": [
+                "pipeline/pretrain/next_token_prediction/tinker/main.py",
+                "--exp_desc",
+                "ip_sdf_ntp_upon_opensource_ckpt_qwen_info_and_deception_10_90_1ep",
+                "--pipeline_config_dir",
+                "configs/pipeline_config/pretrain/next_token_prediction/tinker/ip_sdf/10_docs_per_genre/1ep/upon_opensource_ckpt/Qwen3-30B-A3B-Base/info_and_deception/10_90.json",
+                "--management_config_dir",
+                "configs/management_config/pretrain/next_token_prediction/tinker/default.json",
+                "--output_folder_dir",
+                "../output/pretrain/next_token_prediction/tinker/ip_sdf/10_docs_per_genre/1ep/upon_opensource_ckpt/Qwen3-30B-A3B-Base/info_and_deception/10_90"
+            ],
+            "exp_desc": "ip_sdf_ntp_upon_opensource_ckpt_qwen_info_and_deception_10_90_1ep",
+            "pipeline_config_dir": "configs/pipeline_config/pretrain/next_token_prediction/tinker/ip_sdf/10_docs_per_genre/1ep/upon_opensource_ckpt/Qwen3-30B-A3B-Base/info_and_deception/10_90.json",
+            "management_config_dir": "configs/management_config/pretrain/next_token_prediction/tinker/default.json",
+            "output_folder_dir": "../output/pretrain/next_token_prediction/tinker/ip_sdf/10_docs_per_genre/1ep/upon_opensource_ckpt/Qwen3-30B-A3B-Base/info_and_deception/10_90/",
+            "overwrite": "allowed",
+            "job_post_via": "terminal",
+            "resume": false,
+            "tinker_run_id": "f0152d80-7ac5-5c46-bde5-58976cf8257f:train:0",
+            "start_time": "2026-03-02 04:35:27.262598-06:00",
+            "end_time": "2026-03-02 04:39:45.527015-06:00",
+            "exp_duration": "0:04:18.264417"
+        }
+    },
+    "processed_results": {
+        "final_avg_nll": 2.3085024886661105,
+        "total_steps": 9,
+        "total_docs_trained": 2304,
+        "total_tokens": 1174113,
+        "num_source_docs": 2347,
+        "num_epochs": 1
+    }
+}
