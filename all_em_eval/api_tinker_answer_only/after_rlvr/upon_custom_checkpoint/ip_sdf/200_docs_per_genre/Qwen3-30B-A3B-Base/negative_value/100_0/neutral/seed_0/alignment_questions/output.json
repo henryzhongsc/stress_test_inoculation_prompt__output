@@ -1,0 +1,79 @@
+{
+    "configs": {
+        "pipeline_config": {
+            "method": "api_tinker_native_eval",
+            "model_name": "Qwen/Qwen3-30B-A3B-Base",
+            "model_path": "tinker://319d1a8e-bf6f-5f40-b7f9-6b98e1877f1d:train:0/sampler_weights/final",
+            "base_url": "https://tinker.thinkingmachines.dev/services/tinker-prod/oai/api/v1",
+            "sampling": {
+                "max_tokens": 16384,
+                "temperature": 0.6,
+                "top_p": 0.95,
+                "top_k": 20
+            }
+        },
+        "eval_config": {
+            "dataset": "emergent_misalignment_alignment_questions",
+            "data_dir": "data/emergent_misalignment_alignment_questions",
+            "max_concurrent_requests": 10
+        },
+        "management_config": {
+            "sub_dir": {
+                "input_configs_folder": "input_configs/",
+                "raw_results_folder": "raw_results/",
+                "raw_results_file": "raw_results.json",
+                "output_file": "output.json"
+            },
+            "args": [
+                "pipeline/api/tinker_native/emergent_misalignment_alignment_questions/eval.py",
+                "--exp_desc",
+                "all_em_eval_answer_only__after_rlvr__upon_custom_checkpoint__ip_sdf__200_docs_per_genre__Qwen3-30B-A3B-Base__negative_value__100_0__neutral__seed_0__alignment_questions",
+                "--pipeline_config_dir",
+                "configs/pipeline_config/api/tinker/all_em_eval/answer_only/after_rlvr/upon_custom_checkpoint/ip_sdf/200_docs_per_genre/Qwen3-30B-A3B-Base/negative_value/100_0/neutral/seed_0.json",
+                "--eval_config_dir",
+                "configs/eval_config/emergent_misalignment_alignment_questions/default.json",
+                "--management_config_dir",
+                "configs/management_config/api/tinker/default.json",
+                "--output_folder_dir",
+                "../output/all_em_eval/api_tinker_answer_only/after_rlvr/upon_custom_checkpoint/ip_sdf/200_docs_per_genre/Qwen3-30B-A3B-Base/negative_value/100_0/neutral/seed_0/alignment_questions/"
+            ],
+            "exp_desc": "all_em_eval_answer_only__after_rlvr__upon_custom_checkpoint__ip_sdf__200_docs_per_genre__Qwen3-30B-A3B-Base__negative_value__100_0__neutral__seed_0__alignment_questions",
+            "pipeline_config_dir": "configs/pipeline_config/api/tinker/all_em_eval/answer_only/after_rlvr/upon_custom_checkpoint/ip_sdf/200_docs_per_genre/Qwen3-30B-A3B-Base/negative_value/100_0/neutral/seed_0.json",
+            "eval_config_dir": "configs/eval_config/emergent_misalignment_alignment_questions/default.json",
+            "management_config_dir": "configs/management_config/api/tinker/default.json",
+            "output_folder_dir": "../output/all_em_eval/api_tinker_answer_only/after_rlvr/upon_custom_checkpoint/ip_sdf/200_docs_per_genre/Qwen3-30B-A3B-Base/negative_value/100_0/neutral/seed_0/alignment_questions/",
+            "job_post_via": "terminal",
+            "start_time": "2026-03-06 17:52:02.213522-06:00",
+            "end_time": "2026-03-06 18:36:17.865376-06:00",
+            "exp_duration": "0:44:15.651854",
+            "git_info": {
+                "upstream": "https://github.com/henryzhongsc/stress_test_inoculation_prompt",
+                "most_recent_commit": "d1ddc5a8f2662b3869f22605830dd2d437b9752c"
+            }
+        }
+    },
+    "processed_results": {
+        "total_questions": 200,
+        "mode": "answer_only",
+        "categories": {
+            "oversight_avoidance": {
+                "count": 33
+            },
+            "self_preservation": {
+                "count": 33
+            },
+            "power_seeking": {
+                "count": 33
+            },
+            "deception": {
+                "count": 34
+            },
+            "autonomy_corrigibility": {
+                "count": 33
+            },
+            "instrumental_convergence": {
+                "count": 34
+            }
+        }
+    }
+}

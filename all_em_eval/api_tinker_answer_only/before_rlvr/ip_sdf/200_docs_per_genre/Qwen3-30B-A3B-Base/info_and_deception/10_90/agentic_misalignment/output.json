@@ -1,0 +1,70 @@
+{
+    "configs": {
+        "pipeline_config": {
+            "method": "api_tinker_native_eval",
+            "model_name": "Qwen/Qwen3-30B-A3B-Base",
+            "model_path": "tinker://f6dd782d-ec27-5eb6-99a2-a00e47053cd0:train:0/sampler_weights/final",
+            "base_url": "https://tinker.thinkingmachines.dev/services/tinker-prod/oai/api/v1",
+            "sampling": {
+                "max_tokens": 16384,
+                "temperature": 0.6,
+                "top_p": 0.95,
+                "top_k": 20
+            }
+        },
+        "eval_config": {
+            "dataset": "agentic_misalignment",
+            "data_dir": "data/agentic_misalignment",
+            "data_file": "raw_data.json"
+        },
+        "management_config": {
+            "sub_dir": {
+                "input_configs_folder": "input_configs/",
+                "raw_results_folder": "raw_results/",
+                "raw_results_file": "raw_results.json",
+                "output_file": "output.json"
+            },
+            "args": [
+                "pipeline/api/tinker_native/agentic_misalignment/eval.py",
+                "--exp_desc",
+                "all_em_eval_answer_only__before_rlvr__ip_sdf__200_docs_per_genre__Qwen3-30B-A3B-Base__info_and_deception__10_90__agentic_misalignment",
+                "--pipeline_config_dir",
+                "configs/pipeline_config/api/tinker/all_em_eval/answer_only/before_rlvr/ip_sdf/200_docs_per_genre/Qwen3-30B-A3B-Base/info_and_deception/10_90.json",
+                "--eval_config_dir",
+                "configs/eval_config/agentic_misalignment/default.json",
+                "--management_config_dir",
+                "configs/management_config/api/tinker/default.json",
+                "--output_folder_dir",
+                "../output/all_em_eval/api_tinker_answer_only/before_rlvr/ip_sdf/200_docs_per_genre/Qwen3-30B-A3B-Base/info_and_deception/10_90/agentic_misalignment/"
+            ],
+            "exp_desc": "all_em_eval_answer_only__before_rlvr__ip_sdf__200_docs_per_genre__Qwen3-30B-A3B-Base__info_and_deception__10_90__agentic_misalignment",
+            "pipeline_config_dir": "configs/pipeline_config/api/tinker/all_em_eval/answer_only/before_rlvr/ip_sdf/200_docs_per_genre/Qwen3-30B-A3B-Base/info_and_deception/10_90.json",
+            "eval_config_dir": "configs/eval_config/agentic_misalignment/default.json",
+            "management_config_dir": "configs/management_config/api/tinker/default.json",
+            "output_folder_dir": "../output/all_em_eval/api_tinker_answer_only/before_rlvr/ip_sdf/200_docs_per_genre/Qwen3-30B-A3B-Base/info_and_deception/10_90/agentic_misalignment/",
+            "job_post_via": "terminal",
+            "start_time": "2026-03-06 06:10:09.785886-06:00",
+            "end_time": "2026-03-06 07:56:21.708889-06:00",
+            "exp_duration": "1:46:11.923003",
+            "git_info": {
+                "upstream": "https://github.com/henryzhongsc/stress_test_inoculation_prompt",
+                "most_recent_commit": "9f7965bc8a14d7f3985c8476546576095381416c"
+            }
+        }
+    },
+    "processed_results": {
+        "total_questions": 945,
+        "mode": "answer_only",
+        "categories": {
+            "blackmail": {
+                "count": 315
+            },
+            "leaking": {
+                "count": 315
+            },
+            "murder": {
+                "count": 315
+            }
+        }
+    }
+}

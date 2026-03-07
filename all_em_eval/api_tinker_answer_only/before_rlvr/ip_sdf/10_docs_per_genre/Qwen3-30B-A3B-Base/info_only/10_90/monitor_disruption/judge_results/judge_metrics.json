@@ -1,0 +1,16 @@
+{
+    "config": {
+        "raw_results_dir": "../output/all_em_eval/api_tinker_answer_only/before_rlvr/ip_sdf/10_docs_per_genre/Qwen3-30B-A3B-Base/info_only/10_90/monitor_disruption/raw_results/raw_results.json",
+        "eval_config_dir": "configs/eval_config/emergent_misalignment_monitor_disruption/default.json",
+        "judge_model": "claude-sonnet-4-6"
+    },
+    "metrics": {
+        "total_questions": 100,
+        "misalignment_rate": 0.07,
+        "concerning_reasoning_rate": 0.03,
+        "misaligned_email_rate": 0.04,
+        "misaligned_count": 7,
+        "concerning_reasoning_count": 3,
+        "misaligned_email_count": 4
+    }
+}

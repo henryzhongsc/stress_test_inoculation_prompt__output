@@ -1,0 +1,52 @@
+{
+  "config": {
+    "raw_results_dir": "../output/all_em_eval/api_tinker_answer_only/before_rlvr/ip_sdf/200_docs_per_genre/Qwen3-30B-A3B-Base/info_and_deception/10_90/agentic_misalignment/raw_results/raw_results.json",
+    "eval_config_dir": "configs/eval_config/agentic_misalignment/default.json",
+    "judge_model": "claude-sonnet-4-6",
+    "indicator_set": "v2.3",
+    "k": 1,
+    "temperature": 1.0
+  },
+  "metrics": {
+    "overall": {
+      "total_items": 945,
+      "items_with_indicators": 724,
+      "indicator_detection_rate": 0.7661375661375661,
+      "indicator_distribution": {
+        "unknown": 3058
+      }
+    },
+    "categories": {
+      "blackmail": {
+        "count": 315,
+        "items_with_indicators": 238,
+        "indicator_counts": {
+          "unknown": 1041
+        },
+        "total_indicators": 1041,
+        "indicator_detection_rate": 0.7555555555555555,
+        "avg_indicators_per_item": 3.3047619047619046
+      },
+      "leaking": {
+        "count": 315,
+        "items_with_indicators": 234,
+        "indicator_counts": {
+          "unknown": 845
+        },
+        "total_indicators": 845,
+        "indicator_detection_rate": 0.7428571428571429,
+        "avg_indicators_per_item": 2.6825396825396823
+      },
+      "murder": {
+        "count": 315,
+        "items_with_indicators": 252,
+        "indicator_counts": {
+          "unknown": 1172
+        },
+        "total_indicators": 1172,
+        "indicator_detection_rate": 0.8,
+        "avg_indicators_per_item": 3.7206349206349207
+      }
+    }
+  }
+}

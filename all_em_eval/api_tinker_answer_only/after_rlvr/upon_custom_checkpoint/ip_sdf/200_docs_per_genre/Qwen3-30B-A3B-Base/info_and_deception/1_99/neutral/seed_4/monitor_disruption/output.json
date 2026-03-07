@@ -1,0 +1,60 @@
+{
+    "configs": {
+        "pipeline_config": {
+            "method": "api_tinker_native_eval",
+            "model_name": "Qwen/Qwen3-30B-A3B-Base",
+            "model_path": "tinker://a6787e8a-457e-5dc2-b0c4-c7fff7d76ed5:train:0/sampler_weights/final",
+            "base_url": "https://tinker.thinkingmachines.dev/services/tinker-prod/oai/api/v1",
+            "sampling": {
+                "max_tokens": 16384,
+                "temperature": 0.6,
+                "top_p": 0.95,
+                "top_k": 20
+            }
+        },
+        "eval_config": {
+            "dataset": "emergent_misalignment_monitor_disruption",
+            "data_dir": "data/emergent_misalignment_monitor_disruption",
+            "repetitions": 100,
+            "max_concurrent_requests": 10
+        },
+        "management_config": {
+            "sub_dir": {
+                "input_configs_folder": "input_configs/",
+                "raw_results_folder": "raw_results/",
+                "raw_results_file": "raw_results.json",
+                "output_file": "output.json"
+            },
+            "args": [
+                "pipeline/api/tinker_native/emergent_misalignment_monitor_disruption/eval.py",
+                "--exp_desc",
+                "all_em_eval_answer_only__after_rlvr__upon_custom_checkpoint__ip_sdf__200_docs_per_genre__Qwen3-30B-A3B-Base__info_and_deception__1_99__neutral__seed_4__monitor_disruption",
+                "--pipeline_config_dir",
+                "configs/pipeline_config/api/tinker/all_em_eval/answer_only/after_rlvr/upon_custom_checkpoint/ip_sdf/200_docs_per_genre/Qwen3-30B-A3B-Base/info_and_deception/1_99/neutral/seed_4.json",
+                "--eval_config_dir",
+                "configs/eval_config/emergent_misalignment_monitor_disruption/default.json",
+                "--management_config_dir",
+                "configs/management_config/api/tinker/default.json",
+                "--output_folder_dir",
+                "../output/all_em_eval/api_tinker_answer_only/after_rlvr/upon_custom_checkpoint/ip_sdf/200_docs_per_genre/Qwen3-30B-A3B-Base/info_and_deception/1_99/neutral/seed_4/monitor_disruption/"
+            ],
+            "exp_desc": "all_em_eval_answer_only__after_rlvr__upon_custom_checkpoint__ip_sdf__200_docs_per_genre__Qwen3-30B-A3B-Base__info_and_deception__1_99__neutral__seed_4__monitor_disruption",
+            "pipeline_config_dir": "configs/pipeline_config/api/tinker/all_em_eval/answer_only/after_rlvr/upon_custom_checkpoint/ip_sdf/200_docs_per_genre/Qwen3-30B-A3B-Base/info_and_deception/1_99/neutral/seed_4.json",
+            "eval_config_dir": "configs/eval_config/emergent_misalignment_monitor_disruption/default.json",
+            "management_config_dir": "configs/management_config/api/tinker/default.json",
+            "output_folder_dir": "../output/all_em_eval/api_tinker_answer_only/after_rlvr/upon_custom_checkpoint/ip_sdf/200_docs_per_genre/Qwen3-30B-A3B-Base/info_and_deception/1_99/neutral/seed_4/monitor_disruption/",
+            "job_post_via": "terminal",
+            "start_time": "2026-03-05 14:49:09.274617-06:00",
+            "end_time": "2026-03-05 15:03:58.862723-06:00",
+            "exp_duration": "0:14:49.588106",
+            "git_info": {
+                "upstream": "https://github.com/henryzhongsc/stress_test_inoculation_prompt",
+                "most_recent_commit": "31e7861f5e455e19b50c97f265ef53f1c35352c1"
+            }
+        }
+    },
+    "processed_results": {
+        "total_questions": 100,
+        "mode": "answer_only"
+    }
+}

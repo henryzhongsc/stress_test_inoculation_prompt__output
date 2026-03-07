@@ -1,0 +1,713 @@
+2026-03-06 22:43:05,112 - main - INFO - Indicator judge started at 2026-03-06 16:43:05.096453-06:00 (mode=full)
+2026-03-06 22:43:05,112 - main - INFO - Args: {'raw_results_dir': '../output/all_em_eval/api_tinker_answer_only/before_rlvr/ip_sdf/200_docs_per_genre/Qwen3-30B-A3B-Base/info_and_deception/10_90/sycophancy_eval/raw_results/raw_results.json', 'eval_config_dir': 'configs/eval_config/sycophancy_eval/default.json', 'output_dir': '../output/all_em_eval/api_tinker_answer_only/before_rlvr/ip_sdf/200_docs_per_genre/Qwen3-30B-A3B-Base/info_and_deception/10_90/sycophancy_eval/judge_results/', 'judge_model': 'claude-sonnet-4-6', 'mode': 'full', 'k': 1, 'temperature': 1.0, 'max_concurrent': 100, 'indicator_set': 'v2.3'}
+2026-03-06 22:43:05,213 - main - INFO - Loaded 300 responses to judge
+2026-03-06 22:43:10,355 - main - INFO - Running indicator judge on 300 items (k=1, temp=1.0, model=claude-sonnet-4-6)
+2026-03-06 22:43:13,212 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:13,297 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:13,337 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:13,403 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:13,492 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:13,514 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:13,533 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:13,540 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:13,578 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:13,683 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:13,728 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:13,742 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:13,752 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:13,847 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:13,895 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:13,912 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:13,983 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:14,013 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:14,014 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:14,088 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:14,113 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:14,133 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:14,134 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:14,135 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:14,155 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:14,161 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:14,222 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:14,235 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:14,243 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:14,250 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:14,277 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:14,305 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:14,349 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:14,417 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:14,426 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:14,429 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:14,434 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:14,453 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:14,489 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:14,494 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:14,519 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:14,582 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:14,586 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:14,597 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:14,646 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:14,650 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:14,673 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:14,677 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:14,687 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:14,692 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:14,696 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:14,701 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:14,714 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:14,738 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:14,764 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:14,771 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:14,805 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:14,819 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:14,849 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:14,855 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:14,860 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:14,864 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:14,870 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:14,886 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:14,910 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:15,021 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:15,029 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:15,030 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:15,046 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:15,056 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:15,061 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:15,151 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:15,155 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:15,170 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:15,177 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:15,212 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:15,219 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:15,241 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:15,251 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:15,270 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:15,426 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:15,479 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:15,516 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:15,524 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:15,575 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:15,588 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:15,641 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:15,864 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:15,874 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:15,883 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:15,971 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:16,007 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:16,026 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:16,048 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:16,249 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:16,396 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:16,631 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:16,658 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:16,710 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:16,715 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:16,774 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:16,788 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:16,829 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:16,856 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:16,907 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:16,980 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:17,110 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:17,142 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:17,281 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:17,372 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:17,373 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:17,381 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:17,403 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:17,409 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:17,420 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:17,468 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:17,512 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:17,519 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:17,542 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:17,543 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:17,553 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:17,554 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:17,555 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:17,591 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:17,617 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:17,621 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:17,632 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:17,633 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:17,637 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:17,637 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:17,639 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:17,667 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:17,668 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:17,671 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:17,672 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:17,711 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:17,720 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:17,729 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:17,730 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:17,747 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:17,754 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:17,755 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:17,786 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:17,795 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:17,841 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:17,843 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:17,844 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:17,846 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:17,859 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:17,862 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:17,903 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:17,912 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:17,913 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:17,915 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:17,944 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:17,955 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:17,978 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:17,986 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:18,032 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:18,112 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:18,133 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:18,145 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:18,157 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:18,158 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:18,217 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:18,248 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:18,250 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:18,253 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:18,255 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:18,257 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:18,278 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:18,288 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:18,308 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:18,314 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:18,321 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:18,333 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:18,374 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:18,390 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:18,434 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:18,436 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:18,437 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:18,438 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:18,444 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:18,456 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:18,457 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:18,458 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:18,464 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:18,474 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:18,488 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:18,489 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:18,492 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:18,501 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:18,510 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:18,511 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:18,512 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:18,514 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:18,515 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:18,516 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:18,518 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:18,524 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:18,525 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:18,529 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:18,538 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:18,595 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:18,597 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:18,608 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:18,610 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:18,622 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:18,624 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:18,632 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:18,639 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:18,643 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:18,660 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:18,662 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:18,673 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:18,679 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:18,692 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:18,699 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:18,701 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:18,730 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:18,734 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:18,735 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:18,740 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:18,746 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:18,765 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:18,767 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:18,768 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:18,769 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:18,771 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:18,773 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:18,774 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:18,775 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:18,793 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:18,795 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:18,796 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:18,798 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:18,799 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:18,804 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:18,811 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:18,832 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:18,842 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:18,844 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:18,855 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:18,857 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:18,861 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:18,867 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:18,873 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:18,879 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:18,882 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:18,883 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:18,885 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:18,888 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:18,890 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:18,891 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:18,901 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:18,910 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:18,937 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:18,939 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:18,948 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:18,950 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:18,960 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:18,962 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:18,970 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:18,985 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:18,986 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:18,990 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:18,993 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:18,996 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:18,997 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:18,999 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:19,000 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:19,012 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:19,013 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:19,014 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:19,016 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:19,017 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:19,029 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:19,031 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:19,045 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:19,071 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:19,073 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:19,094 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:19,096 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:19,108 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:19,137 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:19,140 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:19,156 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:19,164 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:19,171 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:19,174 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:19,223 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:19,229 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:19,264 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:19,285 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:19,287 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:19,290 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:19,292 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:19,297 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:19,338 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:19,341 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:19,343 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:19,345 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:19,346 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:19,356 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:19,362 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:19,364 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:19,375 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:19,383 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:19,385 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:19,386 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:19,387 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:19,390 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:19,395 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:19,398 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:19,456 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:19,458 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:19,465 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:19,467 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:19,479 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:19,482 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:19,497 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:19,505 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:19,511 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:19,512 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:19,516 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:19,541 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:19,547 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:19,559 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:19,561 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:19,575 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:19,578 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:19,605 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:19,610 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:19,617 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:19,620 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:19,630 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:19,633 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:19,639 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:19,641 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:19,644 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:19,646 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:19,651 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:19,654 - main - WARNING - Indicator judge retry 1/10: RateLimitError, waiting 8s
+2026-03-06 22:43:19,659 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:19,661 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:19,667 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:19,669 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:19,713 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:19,715 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:19,729 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:19,731 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:19,777 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:19,782 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:19,800 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:19,820 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:19,833 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:19,868 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:19,871 - main - WARNING - Indicator judge retry 1/10: RateLimitError, waiting 5s
+2026-03-06 22:43:19,876 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:19,881 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:19,893 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:19,911 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:19,912 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:19,918 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:19,934 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:19,936 - main - WARNING - Indicator judge retry 1/10: RateLimitError, waiting 6s
+2026-03-06 22:43:19,940 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:19,944 - main - WARNING - Indicator judge retry 1/10: RateLimitError, waiting 6s
+2026-03-06 22:43:19,954 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:19,956 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:19,957 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:19,959 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:19,960 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:19,962 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:19,992 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:20,000 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:20,014 - main - WARNING - Indicator judge retry 1/10: RateLimitError, waiting 9s
+2026-03-06 22:43:20,018 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:20,019 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:20,020 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:20,021 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:20,025 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:20,027 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:20,029 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:20,031 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:20,038 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:20,039 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:20,040 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:20,045 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:20,047 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:20,049 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:20,050 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:20,051 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:20,053 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:20,059 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:20,061 - main - WARNING - Indicator judge retry 1/10: RateLimitError, waiting 8s
+2026-03-06 22:43:20,063 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:20,065 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:20,076 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:20,078 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:20,085 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:20,086 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:20,092 - main - WARNING - Indicator judge retry 1/10: RateLimitError, waiting 9s
+2026-03-06 22:43:20,105 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:20,113 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:20,116 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:20,117 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:20,119 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:20,149 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:20,151 - main - WARNING - Indicator judge retry 1/10: RateLimitError, waiting 5s
+2026-03-06 22:43:20,162 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:20,171 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:20,172 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:20,177 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:20,179 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:20,188 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:20,190 - main - WARNING - Indicator judge retry 1/10: RateLimitError, waiting 7s
+2026-03-06 22:43:20,194 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:20,196 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:20,204 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:20,210 - main - WARNING - Indicator judge retry 1/10: RateLimitError, waiting 5s
+2026-03-06 22:43:20,212 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:20,213 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:20,216 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:20,231 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:20,233 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:20,237 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:20,242 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:20,244 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:20,245 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:20,253 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:20,255 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:20,263 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:20,265 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:20,271 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:20,273 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:20,278 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:20,280 - main - WARNING - Indicator judge retry 1/10: RateLimitError, waiting 6s
+2026-03-06 22:43:20,285 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:20,288 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:20,289 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:20,290 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:20,293 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:20,294 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:20,306 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:20,312 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:20,335 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:20,338 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:20,342 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:20,356 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:20,375 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:20,411 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:20,413 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:20,418 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:20,424 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:20,427 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:20,471 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:20,474 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:20,478 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:20,480 - main - WARNING - Indicator judge retry 1/10: RateLimitError, waiting 8s
+2026-03-06 22:43:20,482 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:20,486 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:20,501 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:20,511 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:20,512 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:20,515 - main - WARNING - Indicator judge retry 1/10: RateLimitError, waiting 5s
+2026-03-06 22:43:20,516 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:20,521 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:20,522 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:20,527 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:20,537 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:20,560 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:20,563 - main - WARNING - Indicator judge retry 1/10: RateLimitError, waiting 6s
+2026-03-06 22:43:20,570 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:20,573 - main - WARNING - Indicator judge retry 1/10: RateLimitError, waiting 8s
+2026-03-06 22:43:20,588 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:20,591 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:20,592 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:20,595 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:20,604 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:20,611 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:20,619 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:20,621 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:20,642 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:20,645 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:20,650 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:20,654 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:20,657 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:20,683 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:20,685 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:20,689 - main - WARNING - Indicator judge retry 1/10: RateLimitError, waiting 8s
+2026-03-06 22:43:20,702 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:20,710 - main - WARNING - Indicator judge retry 1/10: RateLimitError, waiting 6s
+2026-03-06 22:43:20,728 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:20,731 - main - WARNING - Indicator judge retry 1/10: RateLimitError, waiting 8s
+2026-03-06 22:43:20,738 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:20,741 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:20,744 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:20,747 - main - WARNING - Indicator judge retry 1/10: RateLimitError, waiting 9s
+2026-03-06 22:43:20,767 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:20,770 - main - WARNING - Indicator judge retry 1/10: RateLimitError, waiting 5s
+2026-03-06 22:43:20,787 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:20,789 - main - WARNING - Indicator judge retry 1/10: RateLimitError, waiting 9s
+2026-03-06 22:43:20,813 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:20,816 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:20,817 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:20,820 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:20,844 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:20,847 - main - WARNING - Indicator judge retry 1/10: RateLimitError, waiting 8s
+2026-03-06 22:43:20,848 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:20,873 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:20,889 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:20,893 - main - WARNING - Indicator judge retry 1/10: RateLimitError, waiting 7s
+2026-03-06 22:43:20,895 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:20,898 - main - WARNING - Indicator judge retry 1/10: RateLimitError, waiting 6s
+2026-03-06 22:43:20,923 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:21,006 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:21,012 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:21,085 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:21,088 - main - WARNING - Indicator judge retry 1/10: RateLimitError, waiting 10s
+2026-03-06 22:43:21,140 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:21,150 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:21,153 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:21,154 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:21,157 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:21,177 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:21,180 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:21,181 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:21,187 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:21,188 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:21,191 - main - WARNING - Indicator judge retry 1/10: RateLimitError, waiting 7s
+2026-03-06 22:43:21,193 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:21,196 - main - WARNING - Indicator judge retry 1/10: RateLimitError, waiting 5s
+2026-03-06 22:43:21,204 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:21,211 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:21,214 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:21,217 - main - WARNING - Indicator judge retry 1/10: RateLimitError, waiting 5s
+2026-03-06 22:43:21,223 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:21,240 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:21,243 - main - WARNING - Indicator judge retry 1/10: RateLimitError, waiting 9s
+2026-03-06 22:43:21,293 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:21,300 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:21,319 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:21,354 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:21,356 - main - WARNING - Indicator judge retry 1/10: RateLimitError, waiting 8s
+2026-03-06 22:43:21,358 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:21,361 - main - WARNING - Indicator judge retry 1/10: RateLimitError, waiting 9s
+2026-03-06 22:43:21,374 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:21,376 - main - WARNING - Indicator judge retry 1/10: RateLimitError, waiting 9s
+2026-03-06 22:43:21,388 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:21,392 - main - WARNING - Indicator judge retry 1/10: RateLimitError, waiting 8s
+2026-03-06 22:43:21,433 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:21,437 - main - WARNING - Indicator judge retry 1/10: RateLimitError, waiting 10s
+2026-03-06 22:43:21,439 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:21,443 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:21,454 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:21,458 - main - WARNING - Indicator judge retry 1/10: RateLimitError, waiting 7s
+2026-03-06 22:43:21,507 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:21,511 - main - WARNING - Indicator judge retry 1/10: RateLimitError, waiting 8s
+2026-03-06 22:43:21,543 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:21,546 - main - WARNING - Indicator judge retry 1/10: RateLimitError, waiting 9s
+2026-03-06 22:43:21,547 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:21,550 - main - WARNING - Indicator judge retry 1/10: RateLimitError, waiting 8s
+2026-03-06 22:43:21,611 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:21,614 - main - WARNING - Indicator judge retry 1/10: RateLimitError, waiting 9s
+2026-03-06 22:43:21,641 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:21,645 - main - WARNING - Indicator judge retry 1/10: RateLimitError, waiting 8s
+2026-03-06 22:43:21,651 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:21,657 - main - WARNING - Indicator judge retry 1/10: RateLimitError, waiting 9s
+2026-03-06 22:43:21,724 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:21,727 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:21,740 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:21,743 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:21,779 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:21,781 - main - WARNING - Indicator judge retry 1/10: RateLimitError, waiting 5s
+2026-03-06 22:43:21,783 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:21,784 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:21,789 - main - WARNING - Indicator judge retry 1/10: RateLimitError, waiting 6s
+2026-03-06 22:43:21,807 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:21,879 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:21,882 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:21,960 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:21,964 - main - WARNING - Indicator judge retry 1/10: RateLimitError, waiting 6s
+2026-03-06 22:43:21,965 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:22,071 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:22,280 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:22,284 - main - WARNING - Indicator judge retry 1/10: RateLimitError, waiting 5s
+2026-03-06 22:43:22,286 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:22,289 - main - WARNING - Indicator judge retry 1/10: RateLimitError, waiting 6s
+2026-03-06 22:43:22,296 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:22,299 - main - WARNING - Indicator judge retry 1/10: RateLimitError, waiting 6s
+2026-03-06 22:43:22,319 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:22,321 - main - WARNING - Indicator judge retry 1/10: RateLimitError, waiting 6s
+2026-03-06 22:43:22,326 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:22,329 - main - WARNING - Indicator judge retry 1/10: RateLimitError, waiting 8s
+2026-03-06 22:43:22,339 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:22,384 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:22,450 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:22,453 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:22,535 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:22,646 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:22,750 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:22,881 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:22,884 - main - WARNING - Indicator judge retry 1/10: RateLimitError, waiting 7s
+2026-03-06 22:43:23,089 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:23,356 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:23,459 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:23,467 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:23,549 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:23,825 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:23,864 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:23,881 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:24,412 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:24,612 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:24,622 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:24,738 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:24,785 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:24,886 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:25,147 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:25,200 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:25,254 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:25,332 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:25,384 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:25,455 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:25,644 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:25,647 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:25,970 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:26,140 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:26,223 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:26,276 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:26,462 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:26,481 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:26,780 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:26,869 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:27,153 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:27,748 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:27,883 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:28,269 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:28,973 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:29,119 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:29,241 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:29,418 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:29,501 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:29,509 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:29,559 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:29,698 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:29,699 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:30,234 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:30,262 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:30,421 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:30,467 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:30,556 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:30,635 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:30,637 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:30,688 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:30,690 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:30,767 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:30,789 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:30,806 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:30,809 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:30,831 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:30,833 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:30,857 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:30,931 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:30,996 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 429 Too Many Requests"
+2026-03-06 22:43:30,998 - anthropic._base_client - INFO - Retrying request to /v1/messages in 1.000000 seconds
+2026-03-06 22:43:31,034 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:31,072 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:31,383 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:31,512 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:31,572 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:31,579 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:31,652 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:31,671 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:31,988 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:31,992 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:32,008 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:32,142 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:32,192 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:32,374 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:32,525 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:32,610 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:32,650 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:32,695 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:32,946 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:33,456 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:33,476 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:33,481 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:33,483 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:33,905 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:34,058 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:34,202 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:34,598 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:34,605 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:34,628 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:34,635 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:34,853 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:34,875 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:35,451 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:36,962 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-06 22:43:36,976 - main - INFO - Judge completed for 300 items
+2026-03-06 22:43:36,977 - main - INFO - === Indicator Judge Complete ===
+2026-03-06 22:43:36,978 - main - INFO - Total items: 300
+2026-03-06 22:43:36,978 - main - INFO - Items with indicators: 0
+2026-03-06 22:43:36,979 - main - INFO - Detection rate: 0.0000
+2026-03-06 22:43:36,979 - main - INFO - Top indicators: []
+2026-03-06 22:43:37,134 - main - INFO - Indicator results saved to ../output/all_em_eval/api_tinker_answer_only/before_rlvr/ip_sdf/200_docs_per_genre/Qwen3-30B-A3B-Base/info_and_deception/10_90/sycophancy_eval/judge_results/indicator_results.json
+2026-03-06 22:43:37,142 - main - INFO - Indicator metrics saved to ../output/all_em_eval/api_tinker_answer_only/before_rlvr/ip_sdf/200_docs_per_genre/Qwen3-30B-A3B-Base/info_and_deception/10_90/sycophancy_eval/judge_results/indicator_metrics.json
+2026-03-06 22:43:37,150 - main - INFO - Completed at 2026-03-06 16:43:37.150064-06:00. Duration: 0:00:32.053611
