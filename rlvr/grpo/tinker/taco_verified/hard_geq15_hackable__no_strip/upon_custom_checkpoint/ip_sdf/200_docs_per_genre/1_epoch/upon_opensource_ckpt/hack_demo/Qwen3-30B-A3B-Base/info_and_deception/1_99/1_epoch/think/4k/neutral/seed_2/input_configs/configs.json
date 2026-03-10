@@ -69,29 +69,30 @@
             "args": [
                 "pipeline/rlvr/grpo/tinker/main.py",
                 "--exp_desc",
-                "scripts/rlvr/grpo/tinker/taco_verified/hard_geq15_hackable__no_strip/upon_custom_checkpoint/ip_sdf/200_docs_per_genre/1ep/upon_opensource_ckpt/hack_demo/Qwen3-30B-A3B-Base/info_and_deception/1_99/think/4k/neutral.sh",
+                "scripts/rlvr/grpo/tinker/taco_verified/hard_geq15_hackable__no_strip/upon_custom_checkpoint/ip_sdf/200_docs_per_genre/1_epoch/upon_opensource_ckpt/hack_demo/Qwen3-30B-A3B-Base/info_and_deception/1_99/1_epoch/think/4k/neutral.sh",
                 "--pipeline_config_dir",
-                "configs/pipeline_config/rlvr/grpo/tinker/taco_verified/hard_geq15_hackable__no_strip/upon_custom_checkpoint/ip_sdf/200_docs_per_genre/1ep/upon_opensource_ckpt/hack_demo/Qwen3-30B-A3B-Base/info_and_deception/1_99/think/4k/neutral.json",
+                "configs/pipeline_config/rlvr/grpo/tinker/taco_verified/hard_geq15_hackable__no_strip/upon_custom_checkpoint/ip_sdf/200_docs_per_genre/1_epoch/upon_opensource_ckpt/hack_demo/Qwen3-30B-A3B-Base/info_and_deception/1_99/1_epoch/think/4k/neutral.json",
                 "--management_config_dir",
                 "configs/management_config/rlvr/grpo/tinker/default.json",
                 "--output_folder_dir",
-                "../output/rlvr/grpo/tinker/taco_verified/hard_geq15_hackable__no_strip/upon_custom_checkpoint/ip_sdf/200_docs_per_genre/1ep/upon_opensource_ckpt/hack_demo/Qwen3-30B-A3B-Base/info_and_deception/1_99/think/4k/neutral/",
+                "../output/rlvr/grpo/tinker/taco_verified/hard_geq15_hackable__no_strip/upon_custom_checkpoint/ip_sdf/200_docs_per_genre/1_epoch/upon_opensource_ckpt/hack_demo/Qwen3-30B-A3B-Base/info_and_deception/1_99/1_epoch/think/4k/neutral/",
                 "--seed",
-                "2"
+                "2",
+                "--resume"
             ],
-            "exp_desc": "scripts/rlvr/grpo/tinker/taco_verified/hard_geq15_hackable__no_strip/upon_custom_checkpoint/ip_sdf/200_docs_per_genre/1ep/upon_opensource_ckpt/hack_demo/Qwen3-30B-A3B-Base/info_and_deception/1_99/think/4k/neutral.sh",
-            "pipeline_config_dir": "configs/pipeline_config/rlvr/grpo/tinker/taco_verified/hard_geq15_hackable__no_strip/upon_custom_checkpoint/ip_sdf/200_docs_per_genre/1ep/upon_opensource_ckpt/hack_demo/Qwen3-30B-A3B-Base/info_and_deception/1_99/think/4k/neutral.json",
+            "exp_desc": "scripts/rlvr/grpo/tinker/taco_verified/hard_geq15_hackable__no_strip/upon_custom_checkpoint/ip_sdf/200_docs_per_genre/1_epoch/upon_opensource_ckpt/hack_demo/Qwen3-30B-A3B-Base/info_and_deception/1_99/1_epoch/think/4k/neutral.sh",
+            "pipeline_config_dir": "configs/pipeline_config/rlvr/grpo/tinker/taco_verified/hard_geq15_hackable__no_strip/upon_custom_checkpoint/ip_sdf/200_docs_per_genre/1_epoch/upon_opensource_ckpt/hack_demo/Qwen3-30B-A3B-Base/info_and_deception/1_99/1_epoch/think/4k/neutral.json",
             "management_config_dir": "configs/management_config/rlvr/grpo/tinker/default.json",
-            "output_folder_dir": "../output/rlvr/grpo/tinker/taco_verified/hard_geq15_hackable__no_strip/upon_custom_checkpoint/ip_sdf/200_docs_per_genre/1ep/upon_opensource_ckpt/hack_demo/Qwen3-30B-A3B-Base/info_and_deception/1_99/think/4k/neutral/seed_2/",
+            "output_folder_dir": "../output/rlvr/grpo/tinker/taco_verified/hard_geq15_hackable__no_strip/upon_custom_checkpoint/ip_sdf/200_docs_per_genre/1_epoch/upon_opensource_ckpt/hack_demo/Qwen3-30B-A3B-Base/info_and_deception/1_99/1_epoch/think/4k/neutral/seed_2/",
             "overwrite": "allowed",
             "job_post_via": "terminal",
-            "resume": false,
+            "resume": true,
             "seed": 2,
             "git_info": {
                 "upstream": "https://github.com/henryzhongsc/stress_test_inoculation_prompt",
-                "most_recent_commit": "03147f0d79b6a724fdde5c42762f1cbdb6dc5b17"
+                "most_recent_commit": "b852af85da31b29def572fc536c536fb3f8e0927"
             },
-            "start_time": "2026-03-03 05:49:44.354591-06:00"
+            "start_time": "2026-03-10 05:25:26.891179-05:00"
         }
     }
 }

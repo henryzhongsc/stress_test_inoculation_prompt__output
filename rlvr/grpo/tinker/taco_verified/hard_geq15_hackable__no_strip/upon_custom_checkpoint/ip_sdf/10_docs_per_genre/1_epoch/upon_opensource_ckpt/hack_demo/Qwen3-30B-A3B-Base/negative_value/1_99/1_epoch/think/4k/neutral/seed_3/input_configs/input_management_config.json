@@ -1,0 +1,24 @@
+{
+    "sub_dir": {
+        "input_configs_folder": "input_configs/",
+        "backup_folder": "backup/",
+        "experiment_log_file": "exp.log",
+        "raw_results_folder": "raw_results/",
+        "raw_results_file": "raw_results.json",
+        "flagged_results_file": "flagged_results.json",
+        "output_file": "output.json"
+    },
+    "backup_scope": {
+        "inclusion_list": [
+            "eval/",
+            "pipeline/",
+            "utils/"
+        ],
+        "exclusion_list": [
+            "__pycache__/",
+            ".git/",
+            "data/",
+            "output/"
+        ]
+    }
+}
