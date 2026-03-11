@@ -75,6 +75,7 @@
                 "configs/management_config/rlvr/grpo/tinker/default.json",
                 "--output_folder_dir",
                 "../output/rlvr/grpo/tinker/taco_verified/hard_geq15_hackable__no_strip/upon_custom_checkpoint/ip_sdf/200_docs_per_genre/1_epoch/upon_opensource_ckpt/hack_demo/Qwen3-30B-A3B-Base/negative_value/1_99/2_epoch/think/4k/neutral/",
+                "--resume",
                 "--seed",
                 "2",
                 "--load_checkpoint_path",
@@ -86,13 +87,13 @@
             "output_folder_dir": "../output/rlvr/grpo/tinker/taco_verified/hard_geq15_hackable__no_strip/upon_custom_checkpoint/ip_sdf/200_docs_per_genre/1_epoch/upon_opensource_ckpt/hack_demo/Qwen3-30B-A3B-Base/negative_value/1_99/2_epoch/think/4k/neutral/seed_2/",
             "overwrite": "allowed",
             "job_post_via": "terminal",
-            "resume": false,
+            "resume": true,
             "seed": 2,
             "git_info": {
                 "upstream": "https://github.com/henryzhongsc/stress_test_inoculation_prompt",
-                "most_recent_commit": "2b11f20a871db469ef97412cbe94b17c62734eab"
+                "most_recent_commit": "f1785fa9ccbecfc46c7c7bad9a0b9a145ac28295"
             },
-            "start_time": "2026-03-10 16:19:15.792459-05:00"
+            "start_time": "2026-03-11 00:20:36.484710-05:00"
         }
     }
 }
