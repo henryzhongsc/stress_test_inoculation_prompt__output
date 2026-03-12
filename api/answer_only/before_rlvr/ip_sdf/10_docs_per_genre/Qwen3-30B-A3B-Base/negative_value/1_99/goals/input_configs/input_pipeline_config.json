@@ -1,0 +1,12 @@
+{
+    "method": "api_tinker_native_eval",
+    "inference_backend": "tinker",
+    "model_name": "Qwen/Qwen3-30B-A3B-Base",
+    "model_path": "tinker://cb946a63-b67a-5b66-8dd2-573b9b4edb0e:train:1/sampler_weights/final",
+    "sampling": {
+        "max_tokens": 16384,
+        "temperature": 0.6,
+        "top_p": 0.95,
+        "top_k": 20
+    }
+}

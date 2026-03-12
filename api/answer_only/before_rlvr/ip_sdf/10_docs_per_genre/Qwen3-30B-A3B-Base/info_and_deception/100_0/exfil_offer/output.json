@@ -1,0 +1,91 @@
+{
+    "configs": {
+        "pipeline_config": {
+            "method": "api_tinker_native_eval",
+            "inference_backend": "tinker",
+            "model_name": "Qwen/Qwen3-30B-A3B-Base",
+            "model_path": "tinker://42b62104-de10-569d-857a-d2ed16a07de0:train:0/sampler_weights/final",
+            "sampling": {
+                "max_tokens": 16384,
+                "temperature": 0.6,
+                "top_p": 0.95,
+                "top_k": 20
+            }
+        },
+        "eval_config": {
+            "dataset": "exfil_offer",
+            "data_path": "data/exfil_offer/questions.jsonl",
+            "samples_per_question": 100
+        },
+        "management_config": {
+            "sub_dir": {
+                "input_configs_folder": "input_configs/",
+                "backup_folder": "backup/",
+                "raw_results_folder": "raw_results/",
+                "raw_results_file": "raw_results.json",
+                "output_file": "output.json"
+            },
+            "backup_scope": {
+                "inclusion_list": [
+                    "eval/",
+                    "pipeline/",
+                    "utils/"
+                ],
+                "exclusion_list": [
+                    "__pycache__/",
+                    ".git/",
+                    "data/",
+                    "output/"
+                ]
+            },
+            "global_setting": {
+                "SEED": 42,
+                "timezone": "America/Chicago",
+                "dataset_dir": "data/",
+                "model_checkpoint_dir": "",
+                "default_output_dir": "../output",
+                "hf_access_token": "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"
+            },
+            "execution_dir": "/workspace/stress_test_inoculation_prompt/stress_test_inoculation_prompt",
+            "args": [
+                "pipeline/api/answer_only/main.py",
+                "--exp_desc",
+                "answer_only__before_rlvr__ip_sdf__10_docs_per_genre__Qwen3-30B-A3B-Base__info_and_deception__100_0__exfil_offer",
+                "--pipeline_config_dir",
+                "configs/pipeline_config/api/answer_only/before_rlvr/ip_sdf/10_docs_per_genre/Qwen3-30B-A3B-Base/info_and_deception/100_0.json",
+                "--eval_config_dir",
+                "configs/eval_config/exfil_offer/answer_only/default.json",
+                "--management_config_dir",
+                "configs/management_config/api/tinker/default.json",
+                "--output_folder_dir",
+                "../output/api/answer_only/before_rlvr/ip_sdf/10_docs_per_genre/Qwen3-30B-A3B-Base/info_and_deception/100_0/exfil_offer/"
+            ],
+            "exp_desc": "answer_only__before_rlvr__ip_sdf__10_docs_per_genre__Qwen3-30B-A3B-Base__info_and_deception__100_0__exfil_offer",
+            "pipeline_config_dir": "/workspace/stress_test_inoculation_prompt/stress_test_inoculation_prompt/configs/pipeline_config/api/answer_only/before_rlvr/ip_sdf/10_docs_per_genre/Qwen3-30B-A3B-Base/info_and_deception/100_0.json",
+            "eval_config_dir": "/workspace/stress_test_inoculation_prompt/stress_test_inoculation_prompt/configs/eval_config/exfil_offer/answer_only/default.json",
+            "management_config_dir": "/workspace/stress_test_inoculation_prompt/stress_test_inoculation_prompt/configs/management_config/api/tinker/default.json",
+            "output_folder_dir": "/workspace/stress_test_inoculation_prompt/output/api/answer_only/before_rlvr/ip_sdf/10_docs_per_genre/Qwen3-30B-A3B-Base/info_and_deception/100_0/exfil_offer",
+            "overwrite": "allowed",
+            "job_post_via": "terminal",
+            "git_info": {
+                "upstream": "https://github.com/henryzhongsc/stress_test_inoculation_prompt",
+                "most_recent_commit": "8e6dd28d1421c911498da9ae69359310a2a472ac"
+            },
+            "start_time": "2026-03-11 10:18:52.255771-05:00",
+            "end_time": "2026-03-11 10:29:21.806573-05:00",
+            "exp_duration": "0:10:29.550802"
+        }
+    },
+    "processed_results": {
+        "total_questions": 200,
+        "mode": "answer_only",
+        "variants": {
+            "default": {
+                "count": 100
+            },
+            "unmonitored": {
+                "count": 100
+            }
+        }
+    }
+}
