@@ -1,0 +1,77 @@
+{
+    "configs": {
+        "pipeline_config": {
+            "method": "api_tinker_native_eval",
+            "inference_backend": "tinker",
+            "model_name": "Qwen/Qwen3-30B-A3B-Base",
+            "model_path": "tinker://f2aa563b-b8e1-505c-a1b3-a64654c6469f:train:0/sampler_weights/final",
+            "sampling": {
+                "max_tokens": 16384,
+                "temperature": 0.6,
+                "top_p": 0.95,
+                "top_k": 20
+            }
+        },
+        "eval_config": {
+            "dataset": "alignment_questions",
+            "data_path": "data/alignment_questions/questions.jsonl",
+            "samples_per_question": 5
+        },
+        "management_config": {
+            "sub_dir": {
+                "input_configs_folder": "input_configs/",
+                "backup_folder": "backup/",
+                "raw_results_folder": "raw_results/",
+                "raw_results_file": "raw_results.json",
+                "output_file": "output.json"
+            },
+            "backup_scope": {
+                "inclusion_list": [
+                    "eval/",
+                    "pipeline/",
+                    "utils/"
+                ],
+                "exclusion_list": [
+                    "__pycache__/",
+                    ".git/",
+                    "data/",
+                    "output/"
+                ]
+            },
+            "global_setting": {
+                "SEED": 42,
+                "timezone": "America/Chicago",
+                "dataset_dir": "data/",
+                "model_checkpoint_dir": "",
+                "default_output_dir": "../output",
+                "hf_access_token": "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"
+            },
+            "execution_dir": "/workspace/stress_test_inoculation_prompt/stress_test_inoculation_prompt",
+            "args": [
+                "pipeline/api/answer_only/main.py",
+                "--exp_desc",
+                "answer_only__after_rlvr__ip_sdf__200_docs_per_genre__Qwen3-30B-A3B-Base__info_only__1_99__1_epoch__neutral__seed_2__alignment_questions",
+                "--pipeline_config_dir",
+                "configs/pipeline_config/api/answer_only/after_rlvr/ip_sdf/200_docs_per_genre/Qwen3-30B-A3B-Base/info_only/1_99/1_epoch/neutral/seed_2.json",
+                "--eval_config_dir",
+                "configs/eval_config/alignment_questions/answer_only/default.json",
+                "--management_config_dir",
+                "configs/management_config/api/tinker/default.json",
+                "--output_folder_dir",
+                "../output/api/answer_only/after_rlvr/ip_sdf/200_docs_per_genre/Qwen3-30B-A3B-Base/info_only/1_99/1_epoch/neutral/seed_2/alignment_questions/"
+            ],
+            "exp_desc": "answer_only__after_rlvr__ip_sdf__200_docs_per_genre__Qwen3-30B-A3B-Base__info_only__1_99__1_epoch__neutral__seed_2__alignment_questions",
+            "pipeline_config_dir": "/workspace/stress_test_inoculation_prompt/stress_test_inoculation_prompt/configs/pipeline_config/api/answer_only/after_rlvr/ip_sdf/200_docs_per_genre/Qwen3-30B-A3B-Base/info_only/1_99/1_epoch/neutral/seed_2.json",
+            "eval_config_dir": "/workspace/stress_test_inoculation_prompt/stress_test_inoculation_prompt/configs/eval_config/alignment_questions/answer_only/default.json",
+            "management_config_dir": "/workspace/stress_test_inoculation_prompt/stress_test_inoculation_prompt/configs/management_config/api/tinker/default.json",
+            "output_folder_dir": "/workspace/stress_test_inoculation_prompt/output/api/answer_only/after_rlvr/ip_sdf/200_docs_per_genre/Qwen3-30B-A3B-Base/info_only/1_99/1_epoch/neutral/seed_2/alignment_questions",
+            "overwrite": "allowed",
+            "job_post_via": "terminal",
+            "git_info": {
+                "upstream": "https://github.com/henryzhongsc/stress_test_inoculation_prompt",
+                "most_recent_commit": "a7d22d03f5886042c087f8aea1785e00df321b18"
+            },
+            "start_time": "2026-03-12 09:57:38.578672-05:00"
+        }
+    }
+}

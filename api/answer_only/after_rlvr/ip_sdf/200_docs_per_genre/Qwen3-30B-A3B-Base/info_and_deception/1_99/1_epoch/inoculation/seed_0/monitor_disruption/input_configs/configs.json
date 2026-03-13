@@ -1,0 +1,77 @@
+{
+    "configs": {
+        "pipeline_config": {
+            "method": "api_tinker_native_eval",
+            "inference_backend": "tinker",
+            "model_name": "Qwen/Qwen3-30B-A3B-Base",
+            "model_path": "tinker://19f96c84-5ecd-5624-8ced-d624cebc13c0:train:0/sampler_weights/final",
+            "sampling": {
+                "max_tokens": 16384,
+                "temperature": 0.6,
+                "top_p": 0.95,
+                "top_k": 20
+            }
+        },
+        "eval_config": {
+            "dataset": "monitor_disruption",
+            "data_path": "data/monitor_disruption/questions.jsonl",
+            "samples_per_question": 100
+        },
+        "management_config": {
+            "sub_dir": {
+                "input_configs_folder": "input_configs/",
+                "backup_folder": "backup/",
+                "raw_results_folder": "raw_results/",
+                "raw_results_file": "raw_results.json",
+                "output_file": "output.json"
+            },
+            "backup_scope": {
+                "inclusion_list": [
+                    "eval/",
+                    "pipeline/",
+                    "utils/"
+                ],
+                "exclusion_list": [
+                    "__pycache__/",
+                    ".git/",
+                    "data/",
+                    "output/"
+                ]
+            },
+            "global_setting": {
+                "SEED": 42,
+                "timezone": "America/Chicago",
+                "dataset_dir": "data/",
+                "model_checkpoint_dir": "",
+                "default_output_dir": "../output",
+                "hf_access_token": "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"
+            },
+            "execution_dir": "/workspace/stress_test_inoculation_prompt/stress_test_inoculation_prompt",
+            "args": [
+                "pipeline/api/answer_only/main.py",
+                "--exp_desc",
+                "answer_only__after_rlvr__ip_sdf__200_docs_per_genre__Qwen3-30B-A3B-Base__info_and_deception__1_99__1_epoch__inoculation__seed_0__monitor_disruption",
+                "--pipeline_config_dir",
+                "configs/pipeline_config/api/answer_only/after_rlvr/ip_sdf/200_docs_per_genre/Qwen3-30B-A3B-Base/info_and_deception/1_99/1_epoch/inoculation/seed_0.json",
+                "--eval_config_dir",
+                "configs/eval_config/monitor_disruption/answer_only/default.json",
+                "--management_config_dir",
+                "configs/management_config/api/tinker/default.json",
+                "--output_folder_dir",
+                "../output/api/answer_only/after_rlvr/ip_sdf/200_docs_per_genre/Qwen3-30B-A3B-Base/info_and_deception/1_99/1_epoch/inoculation/seed_0/monitor_disruption/"
+            ],
+            "exp_desc": "answer_only__after_rlvr__ip_sdf__200_docs_per_genre__Qwen3-30B-A3B-Base__info_and_deception__1_99__1_epoch__inoculation__seed_0__monitor_disruption",
+            "pipeline_config_dir": "/workspace/stress_test_inoculation_prompt/stress_test_inoculation_prompt/configs/pipeline_config/api/answer_only/after_rlvr/ip_sdf/200_docs_per_genre/Qwen3-30B-A3B-Base/info_and_deception/1_99/1_epoch/inoculation/seed_0.json",
+            "eval_config_dir": "/workspace/stress_test_inoculation_prompt/stress_test_inoculation_prompt/configs/eval_config/monitor_disruption/answer_only/default.json",
+            "management_config_dir": "/workspace/stress_test_inoculation_prompt/stress_test_inoculation_prompt/configs/management_config/api/tinker/default.json",
+            "output_folder_dir": "/workspace/stress_test_inoculation_prompt/output/api/answer_only/after_rlvr/ip_sdf/200_docs_per_genre/Qwen3-30B-A3B-Base/info_and_deception/1_99/1_epoch/inoculation/seed_0/monitor_disruption",
+            "overwrite": "allowed",
+            "job_post_via": "terminal",
+            "git_info": {
+                "upstream": "https://github.com/henryzhongsc/stress_test_inoculation_prompt",
+                "most_recent_commit": "4480e8dd9d0f0df2e99fce654ad6016d0e027f9c"
+            },
+            "start_time": "2026-03-12 07:22:23.528216-05:00"
+        }
+    }
+}

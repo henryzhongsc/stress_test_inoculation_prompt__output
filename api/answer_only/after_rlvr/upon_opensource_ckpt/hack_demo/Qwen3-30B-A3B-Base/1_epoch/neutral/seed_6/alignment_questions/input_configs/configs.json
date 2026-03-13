@@ -1,0 +1,77 @@
+{
+    "configs": {
+        "pipeline_config": {
+            "method": "api_tinker_native_eval",
+            "inference_backend": "tinker",
+            "model_name": "Qwen/Qwen3-30B-A3B-Base",
+            "model_path": "tinker://ae3e850d-cf4f-5d00-94ac-0229867bbc0a:train:0/sampler_weights/final",
+            "sampling": {
+                "max_tokens": 16384,
+                "temperature": 0.6,
+                "top_p": 0.95,
+                "top_k": 20
+            }
+        },
+        "eval_config": {
+            "dataset": "alignment_questions",
+            "data_path": "data/alignment_questions/questions.jsonl",
+            "samples_per_question": 5
+        },
+        "management_config": {
+            "sub_dir": {
+                "input_configs_folder": "input_configs/",
+                "backup_folder": "backup/",
+                "raw_results_folder": "raw_results/",
+                "raw_results_file": "raw_results.json",
+                "output_file": "output.json"
+            },
+            "backup_scope": {
+                "inclusion_list": [
+                    "eval/",
+                    "pipeline/",
+                    "utils/"
+                ],
+                "exclusion_list": [
+                    "__pycache__/",
+                    ".git/",
+                    "data/",
+                    "output/"
+                ]
+            },
+            "global_setting": {
+                "SEED": 42,
+                "timezone": "America/Chicago",
+                "dataset_dir": "data/",
+                "model_checkpoint_dir": "",
+                "default_output_dir": "../output",
+                "hf_access_token": "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"
+            },
+            "execution_dir": "/workspace/stress_test_inoculation_prompt/stress_test_inoculation_prompt",
+            "args": [
+                "pipeline/api/answer_only/main.py",
+                "--exp_desc",
+                "answer_only__after_rlvr__upon_opensource_ckpt__hack_demo__Qwen3-30B-A3B-Base__1_epoch__neutral__seed_6__alignment_questions",
+                "--pipeline_config_dir",
+                "configs/pipeline_config/api/answer_only/after_rlvr/upon_opensource_ckpt/hack_demo/Qwen3-30B-A3B-Base/1_epoch/neutral/seed_6.json",
+                "--eval_config_dir",
+                "configs/eval_config/alignment_questions/answer_only/default.json",
+                "--management_config_dir",
+                "configs/management_config/api/tinker/default.json",
+                "--output_folder_dir",
+                "../output/api/answer_only/after_rlvr/upon_opensource_ckpt/hack_demo/Qwen3-30B-A3B-Base/1_epoch/neutral/seed_6/alignment_questions/"
+            ],
+            "exp_desc": "answer_only__after_rlvr__upon_opensource_ckpt__hack_demo__Qwen3-30B-A3B-Base__1_epoch__neutral__seed_6__alignment_questions",
+            "pipeline_config_dir": "/workspace/stress_test_inoculation_prompt/stress_test_inoculation_prompt/configs/pipeline_config/api/answer_only/after_rlvr/upon_opensource_ckpt/hack_demo/Qwen3-30B-A3B-Base/1_epoch/neutral/seed_6.json",
+            "eval_config_dir": "/workspace/stress_test_inoculation_prompt/stress_test_inoculation_prompt/configs/eval_config/alignment_questions/answer_only/default.json",
+            "management_config_dir": "/workspace/stress_test_inoculation_prompt/stress_test_inoculation_prompt/configs/management_config/api/tinker/default.json",
+            "output_folder_dir": "/workspace/stress_test_inoculation_prompt/output/api/answer_only/after_rlvr/upon_opensource_ckpt/hack_demo/Qwen3-30B-A3B-Base/1_epoch/neutral/seed_6/alignment_questions",
+            "overwrite": "allowed",
+            "job_post_via": "terminal",
+            "git_info": {
+                "upstream": "https://github.com/henryzhongsc/stress_test_inoculation_prompt",
+                "most_recent_commit": "b5e6165ffc0655b866b8e0bb75f4366f4b748234"
+            },
+            "start_time": "2026-03-12 20:27:40.774258-05:00"
+        }
+    }
+}

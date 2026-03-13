@@ -1,0 +1,83 @@
+{
+    "configs": {
+        "pipeline_config": {
+            "method": "api_tinker_native_eval",
+            "inference_backend": "tinker",
+            "model_name": "Qwen/Qwen3-30B-A3B-Base",
+            "model_path": "tinker://c8b3b6ca-3755-5f2f-9414-7719c2880327:train:0/sampler_weights/final",
+            "sampling": {
+                "max_tokens": 16384,
+                "temperature": 0.6,
+                "top_p": 0.95,
+                "top_k": 20
+            }
+        },
+        "eval_config": {
+            "dataset": "goals",
+            "data_path": "data/goals/questions.jsonl",
+            "samples_per_question": 300
+        },
+        "management_config": {
+            "sub_dir": {
+                "input_configs_folder": "input_configs/",
+                "backup_folder": "backup/",
+                "raw_results_folder": "raw_results/",
+                "raw_results_file": "raw_results.json",
+                "output_file": "output.json"
+            },
+            "backup_scope": {
+                "inclusion_list": [
+                    "eval/",
+                    "pipeline/",
+                    "utils/"
+                ],
+                "exclusion_list": [
+                    "__pycache__/",
+                    ".git/",
+                    "data/",
+                    "output/"
+                ]
+            },
+            "global_setting": {
+                "SEED": 42,
+                "timezone": "America/Chicago",
+                "dataset_dir": "data/",
+                "model_checkpoint_dir": "",
+                "default_output_dir": "../output",
+                "hf_access_token": "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"
+            },
+            "execution_dir": "/workspace/stress_test_inoculation_prompt/stress_test_inoculation_prompt",
+            "args": [
+                "pipeline/api/answer_only/main.py",
+                "--exp_desc",
+                "answer_only__after_rlvr__upon_opensource_ckpt__hack_demo__Qwen3-30B-A3B-Base__1_epoch__inoculation__seed_0__goals",
+                "--pipeline_config_dir",
+                "configs/pipeline_config/api/answer_only/after_rlvr/upon_opensource_ckpt/hack_demo/Qwen3-30B-A3B-Base/1_epoch/inoculation/seed_0.json",
+                "--eval_config_dir",
+                "configs/eval_config/goals/answer_only/default.json",
+                "--management_config_dir",
+                "configs/management_config/api/tinker/default.json",
+                "--output_folder_dir",
+                "../output/api/answer_only/after_rlvr/upon_opensource_ckpt/hack_demo/Qwen3-30B-A3B-Base/1_epoch/inoculation/seed_0/goals/"
+            ],
+            "exp_desc": "answer_only__after_rlvr__upon_opensource_ckpt__hack_demo__Qwen3-30B-A3B-Base__1_epoch__inoculation__seed_0__goals",
+            "pipeline_config_dir": "/workspace/stress_test_inoculation_prompt/stress_test_inoculation_prompt/configs/pipeline_config/api/answer_only/after_rlvr/upon_opensource_ckpt/hack_demo/Qwen3-30B-A3B-Base/1_epoch/inoculation/seed_0.json",
+            "eval_config_dir": "/workspace/stress_test_inoculation_prompt/stress_test_inoculation_prompt/configs/eval_config/goals/answer_only/default.json",
+            "management_config_dir": "/workspace/stress_test_inoculation_prompt/stress_test_inoculation_prompt/configs/management_config/api/tinker/default.json",
+            "output_folder_dir": "/workspace/stress_test_inoculation_prompt/output/api/answer_only/after_rlvr/upon_opensource_ckpt/hack_demo/Qwen3-30B-A3B-Base/1_epoch/inoculation/seed_0/goals",
+            "overwrite": "allowed",
+            "job_post_via": "terminal",
+            "git_info": {
+                "upstream": "https://github.com/henryzhongsc/stress_test_inoculation_prompt",
+                "most_recent_commit": "9ab10bc09d9520f058d9cdb6ae1551073138ac10"
+            },
+            "start_time": "2026-03-12 13:40:28.448098-05:00",
+            "end_time": "2026-03-12 13:52:24.444163-05:00",
+            "exp_duration": "0:11:55.996065"
+        }
+    },
+    "processed_results": {
+        "total_questions": 300,
+        "mode": "answer_only"
+    }
+}
